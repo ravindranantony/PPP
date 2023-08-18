@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pythagorean Theorem Calculator</title>
+</head>
+<body>
+    <h1>Pythagorean Theorem Calculator</h1>
+    <label for="sideA">Enter length of side A:</label>
+    <input type="number" id="sideA" step="any">
+    <br>
+    <label for="sideB">Enter length of side B:</label>
+    <input type="number" id="sideB" step="any">
+    <br>
+    <button onclick="calculateHypotenuse()">Calculate Hypotenuse</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateHypotenuse() {
+            const sideA = parseFloat(document.getElementById("sideA").value);
+            const sideB = parseFloat(document.getElementById("sideB").value);
+
+            if (isNaN(sideA) || isNaN(sideB)) {
+                document.getElementById("result").textContent = "Please enter valid side lengths.";
+                return;
+            }
+
+            const hypotenuse = Math.sqrt(sideA ** 2 + sideB ** 2);
+            document.getElementById("result").textContent = "Hypotenuse: " + hypotenuse.toFixed(2);
+        }
+    </script>
+    <div class="container">
+        <img src="/images/pic.jpg" alt="Stock Image">
+
+    </div>
+      
+</body>
+</html>
