@@ -5,47 +5,79 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f0f0f0;
   }
-  .profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
+
+  .resume {
+    max-width: 800px;
     margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
   }
-  .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+
+  .header {
+    text-align: center;
     margin-bottom: 20px;
   }
-  .profile-name {
+
+  .name {
     font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    margin: 5px 0;
   }
-  .profile-bio {
+
+  .title {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #555555;
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+
+  .section-content {
     font-size: 16px;
-    text-align: center;
+    line-height: 1.6;
   }
 </style>
-<title>Profile Page</title>
+<title>My Resume</title>
 </head>
 <body>
-  <div class="profile-container">
-    <img class="profile-image" src="profile-image.jpg" alt="Profile Image">
-    <h1 class="profile-name">Mohamed Hasir</h1>
-    <p class="profile-bio">Web Developer | Skyfarer | Travel Enthusiast</p>
+  <div class="resume">
+    <div class="header">
+      <div class="name">Mohamed Hasir</div>
+      <div class="title">Web Developer</div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title"><strong>Summary</strong></div>
+      <div class="section-content">
+        Web developer/AI with a passion of creating user-friendly websites.
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-title"><strong>Education</strong></div>
+      <div class="section-content">
+        <p>Jamal Mohamed College</p>
+        <p>Bachelor of Computer Application</p>
+        <p>Graduated: April 2017</p>
+      </div>
+    </div>
+    
+    <!-- Add more sections for Experience, Skills, Projects, etc. -->
+
   </div>
 </body>
 </html>
