@@ -1,0 +1,60 @@
+/* This is a CSS comment */
+
+/* Styling for the body element */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling for the header element */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Styling for the main content area */
+  .main-content {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  /* Styling for links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Styling for headings */
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  /* Styling for paragraphs */
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Styling for a class named "button" */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Styling for an ID named "footer" */
+  #footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  
