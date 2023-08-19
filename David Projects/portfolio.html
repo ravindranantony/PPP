@@ -1,99 +1,145 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000000;
-        }
+	<title>Simple landing page</title>
+<style type="text/css">
+	*{padding: 0; margin:0; box-sizing: border-box;}
+	header{
+		font-family: sans-serif;
+		width: 100%;
+		height: 100vh;
+		
+			}
+	nav{
+		width: 100%;
+		height: 100px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		
+	}
+	.logo{
+		font-size:2em; 
+		letter-spacing: 2px;
+	}
+	.menu a{
+		text-decoration: none;
+		color:black;
+		padding: 10px 20px;
+		font-size: 20px;
+		position:relative;
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+	}
+	.menu a:before{
+		content: '';
+		position: absolute;
+		top:0;
+		left:0;
+		width:0%;
+		height: 100%;
+		border-top: 2px solid black;
+		z-index: 1;
+		transition: 0.4s linear;
+	}
+	.menu a:hover:before{
+		width:90%;
+	}
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
+	.login a{
+		text-decoration: none;
+		color: white;
+		background:black;
+		padding: 10px 20px;
+		border-radius: 8px;
+		transition: 0.4s;
+	}
+	.login a:hover{
+			background: transparent;
+			border:1px solid black;
+			color: black;
+		
+	}
+	#h-text{
+			width: 100%;
+			height: 70%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		#h-text h1{
+			font-size: 3em;
+			
+		}
+		#h-text span{
+			color:skyblue;
+		}
+		#h-text a{
+			text-decoration: none;
+			background: black;
+			color: white;
+			letter-spacing: 5px;
+			padding:10px 20px;
+			position: relative;
+			z-index: 1;
+		}
 
-        .logo img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
+	
+	#h-text a:before{
+		content: '';
+		position: absolute;
+		top:10px;
+		left:10px;
+		width:100%;
+		height: 100%;
+		border:1px solid black;
+		background: skyblue;
+		z-index: -1;
 
-        .buttons a {
-            margin-left: 10px;
-            color: #ffffff;
-            text-decoration: none;
-        }
+	}
+}
 
-        .content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-        }
+		#h-text p{
+			margin-bottom: 10px;
+		}
+		#man{
+			position: absolute;
+			bottom: 0;
+			left: 350px;
+		}
+</style>
 
-        .intro {
-            text-align: left;
-            margin-right: 20px;
-            color: #ffffff;
-        }
-
-        .cv-button a {
-            display: inline-block;
-            padding: 10px 20px;
-            color: #ffffff;
-            text-decoration: none;
-            background-color: #000000;
-            border: 1px solid #ffffff;
-        }
-
-        .cv-button a:hover {
-            background-color: #ffffff;
-            color: #000000;
-        }
-
-        .photo img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo">
-                <img src="owner_photo.jpg" alt="Owner Photo">
-            </div>
-            <div class="buttons">
-                <a href="#">Home</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Services</a>
-                <a href="#">Skills</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
-        <div class="content">
-            <div class="intro">
-                <h1>I am a Front-End Developer</h1>
-            </div>
-            <div class="cv-button">
-                <a href="#">Download CV</a>
-            </div>
-            <div class="photo">
-                <img src="owner_photo.jpg" alt="Owner Photo">
-            </div>
-        </div>
-    </div>
+<header>
+	<nav>
+		<div class="logo">
+			Pepper Programming<span style="color: skyblue;">PLUS</span>
+		</div>
+		<div class="menu">
+			<a href="#">Home</a>
+			<a href="#">Portfolio</a>
+			<a href="#">Services</a>
+			<a href="#">Skills</a>
+			<a href="#">Contact</a>
+		</div>
+		<div class="login">
+			<a href="">LinkedIn</a>
+		</div>
+	</nav>
+
+	<section id="h-text">
+		<div class="left">
+			<p>I'm a</p>
+			<h1>Fullstack Deve<span>loper WEB/AI</span></h1>			
+				<br>			<br>
+			<a href="#">Download CV</a>
+		</div>
+		<div class="right">
+			<img src="/images/vs.jpg" width="150" id="himg">
+		</div>	
+
+	</section>
+<img src="img/guitar.gif" width="200" id="man">
+</header>
 </body>
 </html>
