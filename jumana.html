@@ -2,58 +2,50 @@
 <html>
 <head>
   <title>Student Registration Form</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <center>
-  <div class="container">
-    <h2>Student Registration Form</h2>
-    <table>
-    <form action="action.php" method="post">
-      <div class="row">
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id="firstname">
-      </div>
-      <div class="row">
-        <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id="lastname">
-      </div>
-      <div class="row">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-      </div>
-      <div class="row">
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone">
-      </div>
-      <div class="row">
-        <label for="address">Address</label>
-        <input type="text" name="address" id="address">
-      </div>
-      <div class="row">
-        <label for="course">Course</label>
-        <select name="course" id="course">
-          <option value="Select Course">Select Course</option>
-          <option value="BCA">BCA</option>
-          <option value="BBA">BBA</option>
-          <option value="B.Tech">B.Tech</option>
-        </select>
-      </div>
-      <div class="row">
-        <label for="gender">Gender</label>
-        <input type="radio" name="gender" id="male" value="male"> Male
-        <input type="radio" name="gender" id="female" value="female"> Female
-      </div>
-      <div class="row">
-        <label for="dob">Date of Birth</label>
-        <input type="date" name="dob" id="dob">
-      </div>
-      <div class="row">
-        <input type="submit" value="Submit">
-      </div>
-    </form>
-  </div>
-</table>
-  </center>
+  <table>
+    <tr>
+      <th>First Name</th>
+      <td><input type="text" name="firstname"></td>
+    </tr>
+    <tr>
+      <th>Last Name</th>
+      <td><input type="text" name="lastname"></td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+      <th>Phone Number</th>
+      <td><input type="tel" name="phone"></td>
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td><input type="text" name="address"></td>
+    </tr>
+    <tr>
+      <th>Course</th>
+      <td><select name="course">
+        <option value="Select Course">Select Course</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="B.Tech">B.Tech</option>
+      </select></td>
+    </tr>
+    <tr>
+      <th>Gender</th>
+      <td><input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female</td>
+    </tr>
+    <tr>
+      <th>Date of Birth</th>
+      <td><input type="date" name="dob"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="submit" value="Submit"></td>
+    </tr>
+  </table>
 </body>
 </html>
