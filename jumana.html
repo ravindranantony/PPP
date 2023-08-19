@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <center>
-  <title>Order Books</title>
-  </center>
-  <link rel="stylesheet" href="style.css">
+  <title>Student Registration Form</title>
 </head>
-<body bgcolor="black"style="color: aqua;">
-  <h1>Order Books</h1>
-  <div class="container">
-    <ul>
-      <li>
-        <img src="rich dad poor dad.jpg" alt="Book 1">
-        <h2>Book 1</h2>
-        <p>rich dad poor dad</p>
-        <button>Add to Cart</button>
-      </li>
-      <li>
-        <img src="secret.jpg" alt="Book 2">
-        <h2>Book 2</h2>
-        <p>secret book.</p>
-        <button>Add to Cart</button>
-      </li>
-      <li>
-        <img src="book3.jpg" alt="Book 3">
-        <h2>Book 3</h2>
-        <p>This is a book about Python.</p>
-        <button>Add to Cart</button>
-      </li>
-    </ul>
-  </div>
+<body>
+  <table>
+    <tr>
+      <th>First Name</th>
+      <td><input type="text" name="firstname"></td>
+    </tr>
+    <tr>
+      <th>Last Name</th>
+      <td><input type="text" name="lastname"></td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td><input type="email" name="email"></td>
+    </tr>
+    <tr>
+      <th>Phone Number</th>
+      <td><input type="tel" name="phone"></td>
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td><input type="text" name="address"></td>
+    </tr>
+    <tr>
+      <th>Course</th>
+      <td><select name="course">
+        <option value="Select Course">Select Course</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="B.Tech">B.Tech</option>
+      </select></td>
+    </tr>
+    <tr>
+      <th>Gender</th>
+      <td><input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female</td>
+    </tr>
+    <tr>
+      <th>Date of Birth</th>
+      <td><input type="date" name="dob"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="submit" value="Submit"></td>
+    </tr>
+  </table>
 </body>
 </html>
