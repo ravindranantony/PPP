@@ -29,7 +29,7 @@
         } */
         .menu a{
 		text-decoration: none;
-		color:black;
+		color:rgb(12, 37, 179);
 		padding: 20px 20px;
 		font-size: 20px;
 		position:relative;
@@ -58,9 +58,10 @@
         }
         img {
   position: absolute;
-  left: 1100px;
-  top: 100px;
-}
+  right: 0;
+  left: 1150px;
+  top: 50px;
+ }
         a.button {
             display: inline-block;
             padding: 10px 20px;
@@ -73,7 +74,22 @@
         a.button:hover {
             background-color: #feb47b;
         }
-    </style>
+        div.details {
+  position: absolute;
+  top: 500px;
+  right: 1100px;
+  width: 200px;
+  height: 60Px;
+  border: 3px solid #73AD21;
+}
+div.details1 {
+  position: absolute;
+  top: 550px;
+  right: 0px;
+  width: 200px;
+  height: 100Px;
+}
+</style>
 </head>
 <body>
   
@@ -89,10 +105,18 @@
         <!-- Replace with your own image URL -->
         <img src="/images/vs.jpg" alt="Stock Image">
         <h4><marquee>WELCOME TO MY PAGE</marquee></h4>
-        <p>DAVID-WEB DEVELOPER</p>
-        <p>Click the button below to proceed.</p>
+       <div class="para">
+        <p> To leverage my skills in full stack web development and AI to create innovative and 
+            intelligent web applications.<Br> By combining my expertise in frontend and backend 
+            technologies with AI algorithms, I aim to deliver user-centric<Br> solutions that 
+            enhance user experiences and drive business growth.</p>
+            </div>
+    <div class="details"> 
+        <p>DAVID - Fullstack Developer WEB/AI</p>
+        </div>
+          <div class="details1"> 
         <a href="#" class="button">Proceed</a>
-        
+    </div>   
     <!-- </div> -->
 </body>
 </html>
