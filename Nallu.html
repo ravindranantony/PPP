@@ -33,15 +33,11 @@
 
     </div>
       
-</body>
-</html>
 
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Volcanoes</title>
-</head>
+
+
+
 <body>
     <h1>Active Volcanoes</h1>
     
@@ -85,5 +81,58 @@
     <img src="/images/volc2.jpg" alt="Line Chart">
     
     
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3-Letter Wordle Game</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <h1>3-Letter Wordle Game</h1>
+  <p>Guess the 3-letter word:</p>
+  <div>
+    <input type="text" id="guessInput" maxlength="3" autocomplete="off">
+    <button onclick="checkGuess()">Guess</button>
+  </div>
+  <p id="result"></p>
+
+  <script>
+    const wordList = ["cat", "dog", "bat", "hat", "map", "pen", "red", "sun"];
+    const secretWord = wordList[Math.floor(Math.random() * wordList.length)];
+    const MAX_ATTEMPTS = 5;
+    let attempts = 0;
+
+    function checkGuess() {
+      const guess = document.getElementById("guessInput").value.toLowerCase();
+      if (guess.length !== 3) {
+        alert("Please enter a 3-letter word.");
+        return;
+      }
+
+      attempts++;
+      if (guess === secretWord) {
+        displayResult(`Congratulations! You guessed the word "${secretWord}" in ${attempts} attempts.`);
+      } else if (attempts === MAX_ATTEMPTS) {
+        displayResult(`Sorry, you've used all ${MAX_ATTEMPTS} attempts. The word was "${secretWord}".`);
+      } else {
+        displayResult(`Attempt ${attempts}: Keep guessing!`);
+      }
+    }
+
+    function displayResult(message) {
+      document.getElementById("result").textContent = message;
+      if (attempts === MAX_ATTEMPTS || guess === secretWord) {
+        document.getElementById("guessInput").disabled = true;
+      }
+    }
+  </script>
 </body>
 </html>
