@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pythagorean Theorem Calculator</title>
+</head>
+<body>
+    <h1>Pythagorean Theorem Calculator</h1>
+    <label for="sideA">Enter length of side A:</label>
+    <input type="number" id="sideA" step="any">
+    <br>
+    <label for="sideB">Enter length of side B:</label>
+    <input type="number" id="sideB" step="any">
+    <br>
+    <button onclick="calculateHypotenuse()">Calculate Hypotenuse</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateHypotenuse() {
+            const sideA = parseFloat(document.getElementById("sideA").value);
+            const sideB = parseFloat(document.getElementById("sideB").value);
+
+            if (isNaN(sideA) || isNaN(sideB)) {
+                document.getElementById("result").textContent = "Please enter valid side lengths.";
+                return;
+            }
+
+            const hypotenuse = Math.sqrt(sideA ** 2 + sideB ** 2);
+            document.getElementById("result").textContent = "Hypotenuse: " + hypotenuse.toFixed(2);
+        }
+    </script>
+    <div class="container">
+        <img src="/images/pic.jpg" alt="Stock Image">
+
+    </div>
+      
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Volcanoes</title>
+</head>
+<body>
+    <h1>Active Volcanoes</h1>
+    
+    <h2>Introduction <p>
+
+     There are approximately 500 active volcanoes in the world today, not including those underneath the oceans. <br>In fact, as you read these words, there are probably 20 volcanoes erupting right now.<br> Between 50-70 volcanoes are erupting every year, 160 have erupted in the last decade. <br>And there are about 550 that have erupted since the beginning of recorded history.
+</p>
+    </h2>
+    
+    <h2>Data Analysis</h2>
+    
+    <h3>Table 1: Sample Data</h3>
+    <table>
+        <tr>
+            <th>Volcano Name	</th>
+            <th>Country</th>
+            <th>Elevation (m)
+            </th>
+        </tr>
+        <tr>
+            <td>Category 1</td>
+            <td>Aguilera	</td>
+            <td>Agung</td>
+        </tr>
+        <tr>
+            <td>Category 2</td>
+            <td>Chile</td>
+            <td>Indonesia</td>
+        </tr>
+        <tr>
+            <td>Category 3</td>
+            <td>2546</td>
+            <td>3142</td>
+        </tr>
+    </table>
+    
+    <h3>Chart 1: Bar Chart</h3>
+    <img src="/images/volc.jpg" alt="Bar Chart">
+    
+    <h3>Chart 2: Line Chart</h3>
+    <img src="/images/volc2.jpg" alt="Line Chart">
+    
+    
+</body>
+</html>
