@@ -33,5 +33,106 @@
 
     </div>
       
+
+
+
+
+
+<body>
+    <h1>Active Volcanoes</h1>
+    
+    <h2>Introduction <p>
+
+     There are approximately 500 active volcanoes in the world today, not including those underneath the oceans. <br>In fact, as you read these words, there are probably 20 volcanoes erupting right now.<br> Between 50-70 volcanoes are erupting every year, 160 have erupted in the last decade. <br>And there are about 550 that have erupted since the beginning of recorded history.
+</p>
+    </h2>
+    
+    <h2>Data Analysis</h2>
+    
+    <h3>Table 1: Sample Data</h3>
+    <table>
+        <tr>
+            <th>Volcano Name	</th>
+            <th>Country</th>
+            <th>Elevation (m)
+            </th>
+        </tr>
+        <tr>
+            <td>Category 1</td>
+            <td>Aguilera	</td>
+            <td>Agung</td>
+        </tr>
+        <tr>
+            <td>Category 2</td>
+            <td>Chile</td>
+            <td>Indonesia</td>
+        </tr>
+        <tr>
+            <td>Category 3</td>
+            <td>2546</td>
+            <td>3142</td>
+        </tr>
+    </table>
+    
+    <h3>Chart 1: Bar Chart</h3>
+    <img src="/images/volc.jpg" alt="Bar Chart">
+    
+    <h3>Chart 2: Line Chart</h3>
+    <img src="/images/volc2.jpg" alt="Line Chart">
+    
+    
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3-Letter Wordle Game</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <h1>3-Letter Wordle Game</h1>
+  <p>Guess the 3-letter word:</p>
+  <div>
+    <input type="text" id="guessInput" maxlength="3" autocomplete="off">
+    <button onclick="checkGuess()">Guess</button>
+  </div>
+  <p id="result"></p>
+
+  <script>
+    const wordList = ["cat", "dog", "bat", "hat", "map", "pen", "red", "sun"];
+    const secretWord = wordList[Math.floor(Math.random() * wordList.length)];
+    const MAX_ATTEMPTS = 5;
+    let attempts = 0;
+
+    function checkGuess() {
+      const guess = document.getElementById("guessInput").value.toLowerCase();
+      if (guess.length !== 3) {
+        alert("Please enter a 3-letter word.");
+        return;
+      }
+
+      attempts++;
+      if (guess === secretWord) {
+        displayResult(`Congratulations! You guessed the word "${secretWord}" in ${attempts} attempts.`);
+      } else if (attempts === MAX_ATTEMPTS) {
+        displayResult(`Sorry, you've used all ${MAX_ATTEMPTS} attempts. The word was "${secretWord}".`);
+      } else {
+        displayResult(`Attempt ${attempts}: Keep guessing!`);
+      }
+    }
+
+    function displayResult(message) {
+      document.getElementById("result").textContent = message;
+      if (attempts === MAX_ATTEMPTS || guess === secretWord) {
+        document.getElementById("guessInput").disabled = true;
+      }
+    }
+  </script>
 </body>
 </html>
