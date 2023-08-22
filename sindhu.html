@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #profile-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  #profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  #proceed-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div id="profile-container">
+    <img id="profile-image" src="/images/background.jpg" alt="Profile Image"> <!-- Replace 'profile.jpg' with your image path -->
+    <h1>Sindhu Laheri</h1>
+    <p>Web Developer</p>
+    <button id="proceed-button">Proceed</button>
+  </div>
+
+  <script>
+    const proceedButton = document.getElementById('proceed-button');
+    
+    proceedButton.addEventListener('click', () => {
+      // Add your desired action when the button is clicked
+     // alert('Proceed button clicked!');
+      // You can replace the above alert with any other action you want to perform.
+      window.location.replace("index.html");
+    });
+  </script>
+</body>
+</html>
