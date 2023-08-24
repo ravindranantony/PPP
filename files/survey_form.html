@@ -10,7 +10,6 @@
 		Build a Survey Form using HTML and CSS
 	</title>
 	<style>
-
 		/* Styling the Body element i.e. Color,
 		Font, Alignment */
 		body {
@@ -18,7 +17,6 @@
 			font-family: Verdana;
 			text-align: center;
 		}
-
 		/* Styling the Form (Color, Padding, Shadow) */
 		form {
 			background-color: #f7e0e0;
@@ -38,7 +36,6 @@
 			display: block;
 			margin-bottom: 10px;
 		}
-
 		/* Styling form-control input,
 		select, textarea */
 		.form-control input,
@@ -51,7 +48,6 @@
 			display: block;
 			width: 95%;
 		}
-
 		/* Styling form-control Radio
 		button and Checkbox */
 		.form-control input[type="radio"],
@@ -59,7 +55,6 @@
 			display: inline-block;
 			width: auto;
 		}
-
 		/* Styling Button */
 		button {
 			background-color: #ee900e;
@@ -74,10 +69,8 @@
 		}
 	</style>
 </head>
-
 <body>
 	<h1>Survey Form</h1>
-
 	<!-- Create Form -->
 	<form id="form">
 		<!-- Details -->
@@ -90,34 +83,28 @@
 				id="name"
 				placeholder="Enter your name" />
 		</div>
-
 		<div class="form-control">
 			<label for="email" id="label-email">
 				Email
 			</label>
-
 			<!-- Input Type Email-->
 			<input type="email"
 				id="email"
 				placeholder="Enter your email" />
 		</div>
-
 		<div class="form-control">
 			<label for="age" id="label-age">
 				Age
 			</label>
-
 			<!-- Input Type Text -->
 			<input type="text"
 				id="age"
 				placeholder="Enter your age" />
 		</div>
-
 		<div class="form-control">
 			<label for="role" id="label-role">
 				Which option best describes you?
 			</label>
-			
 			<!-- Dropdown options -->
 			<select name="role" id="role">
 				<option value="student">Student</option>
@@ -128,12 +115,10 @@
 				<option value="other">Other</option>
 			</select>
 		</div>
-
 		<div class="form-control">
 			<label>
 				Did you like this course?
 			</label>
-
 			<!-- Input Type Radio Button -->
 			<label for="recommed-1">
 				<input type="radio"
@@ -151,7 +136,6 @@
 					name="recommed">Maybe</input>
 			</label>
 		</div>
-
 		<div class="form-control">
 			<label>Languages and Frameworks known
 				<small>(Check all that apply)</small>
@@ -188,18 +172,15 @@
 				<input type="checkbox"
 					name="inp">Spring</input></label>
 		</div>
-
 		<div class="form-control">
 			<label for="comment">
 				Any comments or suggestions
 			</label>
-
 			<!-- multi-line text input control -->
 			<textarea name="comment" id="comment"
 				placeholder="Enter your comment here">
 			</textarea>
 		</div>
-
 		<!-- Multi-line Text Input Control -->
 		<button type="submit" value="submit">
 			Submit
