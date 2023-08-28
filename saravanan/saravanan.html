@@ -1,177 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <title>saravanan play ground</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            text-align: center;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 0;
+            display: none; /* Initially hide the text */
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color:blue;">This is a heading</h1>
-    <h1>The first play ground</h1>
-    <p>how are you guys</p>
-       
-    <img src="images/island.jpg" alt="W3Schools.com" width="500" height="300">
-   <pre>     <a href="https://www.w3schools.com">w3 school link</a></pre>    
-  <pre>
-                       <button>play /pause</button>
-          </pre>                          
-    <h2>An Unordered HTML List</h2>
+    <div class="container">
+        <h1>saravanan</h1>
+        <p>Front-end Web Developer</p>
+        <p>Email: saravanans541@gmail.com</p>
+        <p>Skills: HTML, CSS, JavaScript</p>
+        <p>Tasks: <a href="/saravanan/Tasks/fibonacci/fibonacci.html">Task Fibonacci</a></p>
+    </div>
 
-<ul>
-  <li>Linked in</li>
-  <li>Insta</li>
-  <li>X</li>
-</ul>  
-<h2> An Ordered HTML List</h2>
+    <script>
+        // Fade in the container when the page loads
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const container = document.querySelector('.container');
+            container.style.opacity = "1";
 
-<ol>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol> 
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-
-<h6>Heading 6</h6>
-
-<p>This is<br>a paragraph<br>with line breaks.</p>
-<p>In HTML, spaces and new lines are ignored:</p>
-
-<p>
-
-  My Bonnie lies over the ocean.
-
-  My Bonnie lies over the sea.
-
-  My Bonnie lies over the ocean.
-
-  Oh, bring back my Bonnie to me.
-
-</p>
-<p>The pre tag preserves both spaces and line breaks:</p>
-<body style="background-color:rgba(108, 225, 241, 0.918);"></body>
-<pre>
-   My Bonnie lies over the ocean.
-
-   My Bonnie lies over the sea.
-
-   My Bonnie lies over the ocean.
-   
-   Oh, bring back my Bonnie to me.
-</pre>
-<p>I am normal</p>
-<p style="color:rgb(4, 255, 0);">I am green</p>
-<p style="color:rgb(91, 190, 240);">I am blue</p>
-<p style="font-size:60px;">I am big</p>
-<h1 style="color:blue;">hi how is this</h1>
-<p style="color:red;">is it ok.</p>
-<h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">This is a heading</h1>
-<p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">This is a paragraph.</p>
-
-<h1 style="color:blue;">This is a heading</h1>
-<h1>The datalist element</h1>
-
-<form action="/action_page.php" method="get"></form>
-  <label for="browser">Choose your browser from the list:</label>
-  <input list="browsers" name="browser" id="browser">
-  <datalist id="browsers">
-    <option value="Edge">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist>
-  <input type="submit">
-</form>
-
-<p><strong>Note:</strong> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
-
-<style>
-  table, th, td {
-    border: 1px solid black;
-  }
-  </style>
-   
-  <h1>The caption element</h1>
-  
-  <table>
-    <caption>Monthly Expense</caption>
-    <tr>
-      <th>Month</th>
-      <th>Expense</th>
-    </tr>
-    <tr>
-      <td>January</td>
-      <td>$100</td>
-    </tr>
-    <tr>
-      <td>February</td>
-      <td>$50</td>
-          </tr>
-          <tr> 
-            <td> March</td>
-            <td>$25</td>
-          </tr>
-   
-  </table>
-  <h1>The details element</h1>
-
-<details>
-  <summary>AI simple definition</summary>
-  <p>Artificial intelligence leverages computers and machines to mimic the problem-solving and decision-making capabilities of the human mind.</p>
-</details>
-<style>
-  .myDiv {
-    border: 5px outset rgb(255, 0, 170);
-    background-color: rgb(221, 230, 173);    
-    text-align: center;
-  }
-  </style>
-  </head>
-  <body>
-  
-  <h1>The div element</h1>
-  
-  <div class="myDiv">
-    <h2>This is a heading in a div element</h2>
-    <p>This is some text in a div element.</p>
-  </div>
-  
-  <p>This is some text outside the div element.</p>
-  
-  <h1>The mark element</h1>
-
-<p>Do not forget to buy <mark>milk 1 liter</mark> today.</p>
-<h1>The meter element</h1>
-
-<p>The meter element is used to display a gauge:</p>
-
-<label for="disk_c">Disk usage C:</label>
-<meter id="disk_c" value="7" min="0" max="10">2 out of 10</meter><br>
-
-<label for="disk_d">Disk usage D:</label>
-<meter id="disk_d" value="0.3">60%</meter>
-
-<p><strong>Note:</strong> The meter tag is not supported in Edge 12 (or earlier).</p>
-<h1>The option element</h1>
-
-<label for="cars">Choose a car:</label>
-
-<select id="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="opel">Opel</option>
-  <option value="audi">Audi</option>
-</select>
-<h1>The span element</h1>
-
-<p>My mother has <span style="color:rgba(0, 0, 255, 0.623);font-weight:bold">blue</span> eyes and my father has <span style="color:rgb(60, 91, 7);font-weight:bold">dark green</span> eyes.</p>
-<h1>The video element</h1>
-
-<video width="320" height="240" controls>
-  <source src="video/s.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
+            // Make the text appear one by one
+            let delay = 500; // Start delay in milliseconds
+            const increment = 500; // Incremental delay for each text
+            container.querySelectorAll('h1, p').forEach((element) => {
+                setTimeout(() => {
+                    element.style.display = 'block';
+                }, delay);
+                delay += increment;
+            });
+        });
+    </script>
 </body>
-</html>   
+</html>
