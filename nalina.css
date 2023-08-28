@@ -1,0 +1,82 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+h1{
+text-align: left;
+margin-top: 40p;
+padding-top: 5%;
+
+}
+#about {
+    background-color:black;
+    color: #ddd;
+    
+}
+
+
+/* Basic styling */
+body {
+    font-family:sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding:0%
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+}
+
+/* Projects */
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
