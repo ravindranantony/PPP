@@ -9,7 +9,7 @@
     <h1>The first play ground</h1>
     <p>how are you guys</p>
        
-    <img src="image/s (2).jpeg" alt="W3Schools.com" width="500" height="200">
+    <img src="images/island.jpg" alt="W3Schools.com" width="500" height="300">
    <pre>     <a href="https://www.w3schools.com">w3 school link</a></pre>    
   <pre>
                        <button>play /pause</button>
@@ -31,9 +31,9 @@
 <h3>Heading 3</h3>
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
-<hr>
+
 <h6>Heading 6</h6>
-<hr>
+
 <p>This is<br>a paragraph<br>with line breaks.</p>
 <p>In HTML, spaces and new lines are ignored:</p>
 
@@ -46,7 +46,7 @@
 
 </p>
 <p>The pre tag preserves both spaces and line breaks:</p>
-<body style="background-color:rgba(241, 150, 108, 0.918);"></body>
+<body style="background-color:rgba(108, 225, 241, 0.918);"></body>
 <pre>
    My Bonnie lies over the ocean.
 
@@ -66,6 +66,109 @@
 <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">This is a paragraph.</p>
 
 <h1 style="color:blue;">This is a heading</h1>
+<h1>The datalist element</h1>
 
+<form action="/action_page.php" method="get"></form>
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
+
+<style>
+  table, th, td {
+    border: 1px solid black;
+  }
+  </style>
+   
+  <h1>The caption element</h1>
+  
+  <table>
+    <caption>Monthly Expense</caption>
+    <tr>
+      <th>Month</th>
+      <th>Expense</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$50</td>
+          </tr>
+          <tr> 
+            <td> March</td>
+            <td>$25</td>
+          </tr>
+   
+  </table>
+  <h1>The details element</h1>
+
+<details>
+  <summary>AI simple definition</summary>
+  <p>Artificial intelligence leverages computers and machines to mimic the problem-solving and decision-making capabilities of the human mind.</p>
+</details>
+<style>
+  .myDiv {
+    border: 5px outset rgb(255, 0, 170);
+    background-color: rgb(221, 230, 173);    
+    text-align: center;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <h1>The div element</h1>
+  
+  <div class="myDiv">
+    <h2>This is a heading in a div element</h2>
+    <p>This is some text in a div element.</p>
+  </div>
+  
+  <p>This is some text outside the div element.</p>
+  
+  <h1>The mark element</h1>
+
+<p>Do not forget to buy <mark>milk 1 liter</mark> today.</p>
+<h1>The meter element</h1>
+
+<p>The meter element is used to display a gauge:</p>
+
+<label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="7" min="0" max="10">2 out of 10</meter><br>
+
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.3">60%</meter>
+
+<p><strong>Note:</strong> The meter tag is not supported in Edge 12 (or earlier).</p>
+<h1>The option element</h1>
+
+<label for="cars">Choose a car:</label>
+
+<select id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+<h1>The span element</h1>
+
+<p>My mother has <span style="color:rgba(0, 0, 255, 0.623);font-weight:bold">blue</span> eyes and my father has <span style="color:rgb(60, 91, 7);font-weight:bold">dark green</span> eyes.</p>
+<h1>The video element</h1>
+
+<video width="320" height="240" controls>
+  <source src="video/s.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
 </body>
-</html>
+</html>   
