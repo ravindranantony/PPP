@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
 }
+
 .container {
     background-color: #fff;
     padding: 20px;
@@ -15,6 +16,7 @@ body {
     max-width: 500px;
     text-align: center;
 }
+
 button {
     margin-top: 10px;
     padding: 10px 20px;
@@ -24,9 +26,11 @@ button {
     border: none;
     border-radius: 5px;
 }
+
 button:hover {
     background-color: #0056b3;
 }
+
 #result {
     margin-top: 20px;
     font-weight: bold;
