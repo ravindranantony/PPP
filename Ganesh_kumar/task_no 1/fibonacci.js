@@ -15,5 +15,5 @@ function generateFibonacci() {
         b = temp + b;
     }
 
-    document.getElementById('result').innerText = "Fibonacci Series Results: " + fibonacciSeries.join(', ');
+    document.getElementById('result').innerText = "Fibonacci Series: " + fibonacciSeries.join(', ');
 }

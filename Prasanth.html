@@ -38,6 +38,24 @@
             background-color: #f5710c;
         }
     </style>
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const dateElement = document.getElementById("date");
+            const timeElement = document.getElementById("time");
+            
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = now.toLocaleDateString('en-US', options);
+            
+            const formattedTime = now.toLocaleTimeString('en-US');
+            
+            dateElement.textContent = "Date: " + formattedDate;
+            timeElement.textContent = "Time: " + formattedTime;
+        }
+        
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+    </script>
 </head>
 <body>
     <div class="container">
@@ -47,6 +65,9 @@
         <h1>Prasanth's Page</h1>
         <p>This is a simple intro page. Click the button below to proceed.</p>
         <a href="https://pepperprogrammingplus.vercel.app/" class="button">Proceed</a><br>
+        <p id="date">Date: Loading...</p>
+            <p id="time">Time: Loading...</p>
             </div>
+            
 </body>
 </html>
