@@ -17,3 +17,4 @@ function generateFibonacci() {
 
  document.getElementById('result').innerText = "Fibonacci Series: " + fibonacciSeries.join(',');
 }
+
