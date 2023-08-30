@@ -18,6 +18,8 @@ body {
     height: 350px;
     width: 300px;
     outline-style: solid;
+    border-style: groove;
+    border-width: 2px;
 }
 
 h1 {
@@ -42,6 +44,17 @@ h1 {
     gap: 10px;
 }
 
+.btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
 button {
     padding: 10px;
     border: none;
@@ -57,7 +70,16 @@ button:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
+.operator {
+    background-color: #76edd5;
+}
+#clear {
+    background-color: #e74c3c;
+}
 
+#calculate {
+    background-color: #2ecc71;
+}
 button:active {
     transform: scale(1);
 }
