@@ -1,0 +1,29 @@
+
+
+body {
+    background-image: url("_af16aa63-2467-4943-9d98-2aa275070511.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+        button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        }
+        button:hover {
+        background-color: #0056b3;
+        }
+        #result {
+        margin-top: 20px;
+        font-weight: bold;
+        }    
