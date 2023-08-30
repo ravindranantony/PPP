@@ -53,6 +53,7 @@ button {
 button:hover {
     background-color: #f4f4f4;
     transform: scale(1.1);
+    cursor: crosshair;
 }
 
 button:active {
