@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('/images/calc-bg.jpg');
+    background-image: url('/images/P3_calc_logo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -53,7 +53,6 @@ button {
 button:hover {
     background-color: #f4f4f4;
     transform: scale(1.1);
-    cursor: crosshair;
 }
 
 button:active {

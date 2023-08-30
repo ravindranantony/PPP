@@ -5,8 +5,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("/images/Flower.jpeg");
-    background-size: cover;
 }
 
 .container {
@@ -37,5 +35,3 @@ button:hover {
     margin-top: 20px;
     font-weight: bold;
 }
-
-

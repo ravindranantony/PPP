@@ -1,11 +1,12 @@
 
 
 body {
-    background-image: url("_af16aa63-2467-4943-9d98-2aa275070511.jpg");
+    background-image: url('bg7.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
     font-family: Arial, sans-serif;
+    color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
