@@ -1,15 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ee76d0;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.container {
-    background-color: #f86666;
+    }
+    .container {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -17,9 +14,8 @@ body {
     width: 80%;
     max-width: 500px;
     text-align: center;
-}
-
-button {
+    }
+    button {
     margin-top: 10px;
     padding: 10px 20px;
     cursor: pointer;
@@ -27,14 +23,11 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-}
-
-button:hover {
-    background-color: #3692f5;
+    }
+    button:hover {
     background-color: #0056b3;
-}
-
-#result {
+    }
+    #result {
     margin-top: 20px;
     font-weight: bold;
-}
+    }
