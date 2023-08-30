@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('/images/orange.jpg');
+    background-image: url('/images/bg1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -10,12 +10,14 @@ body {
     height: 100vh;
 }
 .calculator {
-    border-color: black;
-    background-color: #a7a3b8;
+    border-color: rgb(104, 69, 14);
+    background-color: rgb(249, 171, 62);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 350px;
     width: 300px;
+    outline-style: solid;
 }
 
 h1 {
@@ -25,7 +27,7 @@ h1 {
 }
 
 #result {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -51,7 +53,8 @@ button {
 }
 
 button:hover {
-    background-color: #190202;
+    background-color: rgb(247, 236, 155);
+    cursor: pointer;
     transform: scale(1.1);
 }
 
