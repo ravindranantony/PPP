@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('/images/bg1.jpg');
+    background-image: url('/images/pxfuel.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -9,17 +9,13 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
 .calculator {
-    border-color: rgb(104, 69, 14);
-    background-color: rgb(249, 171, 62);
-    padding: 30px;
+    background-color: #fff;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    height: 350px;
-    width: 300px;
-    outline-style: solid;
-    border-style: groove;
-    border-width: 2px;
+    width: 250px;
 }
 
 h1 {
@@ -29,7 +25,7 @@ h1 {
 }
 
 #result {
-    width: 95%;
+    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 4px;
@@ -44,17 +40,6 @@ h1 {
     gap: 10px;
 }
 
-.btn {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
-
 button {
     padding: 10px;
     border: none;
@@ -66,20 +51,11 @@ button {
 }
 
 button:hover {
-    background-color: rgb(247, 237, 160);
-    cursor: pointer;
+    background-color: #f4f4f4;
     transform: scale(1.1);
-}
-.operator {
-    background-color: #76edd5;
-}
-#clear {
-    background-color: #e74c3c;
+    cursor: crosshair;
 }
 
-#calculate {
-    background-color: #2ecc71;
-}
 button:active {
     transform: scale(1);
 }
