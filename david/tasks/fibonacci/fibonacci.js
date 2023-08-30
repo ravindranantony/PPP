@@ -5,6 +5,7 @@ function generateFibonacci() {
         return;
     }
 
+    let fibonacciSeries = []; 
     let fibonacciSeries = [];
     let a = 0, b = 1;
 
@@ -17,4 +18,3 @@ function generateFibonacci() {
 
  document.getElementById('result').innerText = "Fibonacci Series: " + fibonacciSeries.join(',');
 }
-
