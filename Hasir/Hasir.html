@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('/images/Hasir_sky.jpg');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            text-align: center;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 0;
+            display: none; /* Initially hide the text */
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>MOHAMED HASIR</h1>
+        <p>Full Stack Web Developer (Web / AI)</p>
+        <p>Email: mdhasir96@yahoo.com</p>
+        <p>Skills: HTML, CSS, JavaScript, ReactJS</p>
+        <p>Project 1: <a href="/Hasir/Tasks/Fibonacci Sequence/Fibonacci.html">Fibonacci</a></p>
+        <p>Project 2: <a href="/Hasir/Tasks/Calculator/Calculator.html">Calculator</a></p>
+    </div> 
+
+    <script>
+        // Fade in the container when the page loads
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const container = document.querySelector('.container');
+            container.style.opacity = "1";
+
+            // Make the text appear one by one
+            let delay = 500; // Start delay in millisecond
+            const increment = 500; // Incremental delay for each text
+            container.querySelectorAll('h1, p').forEach((element) => {
+                setTimeout(() => {
+                    element.style.display = 'block';
+                }, delay);
+                delay += increment;
+            });
+        });
+    </script>
+</body>
+</html>

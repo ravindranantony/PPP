@@ -6,6 +6,7 @@ function generateFibonacci() {
     }
 
     let fibonacciSeries = []; 
+    let fibonacciSeries = [];
     let a = 0, b = 1;
 
     for (let i = 0; i < n; i++) {

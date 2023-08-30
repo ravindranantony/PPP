@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ee76d0;
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +10,7 @@ body {
 
 .container {
     background-color: #f86666;
+    background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,9 +31,10 @@ button {
 
 button:hover {
     background-color: #3692f5;
+    background-color: #0056b3;
 }
 
 #result {
     margin-top: 20px;
     font-weight: bold;
-} 
+}
