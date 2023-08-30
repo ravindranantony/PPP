@@ -14,4 +14,5 @@ function generateFibonacci() {
     b = temp + b;
     }
     document.getElementById('result').innerText = "Fibonacci Series: " + fibonacciSeries.join(',');
+    document.body.style.backgroundColor = "yellow";
     }
