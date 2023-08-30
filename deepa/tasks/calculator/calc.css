@@ -53,7 +53,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(247, 236, 155);
+    background-color: rgb(247, 237, 160);
     cursor: pointer;
     transform: scale(1.1);
 }
