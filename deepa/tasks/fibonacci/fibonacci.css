@@ -1,19 +1,23 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    background-image: url('/images/bg2.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 .container {
-    background-color: #fff;
+    background-color: #ecf3f3;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 500px;
     text-align: center;
+    border-color: black;
+    border-width: 5px;
+    border-style: double;
 }
 
 button {
@@ -22,7 +26,7 @@ button {
     cursor: pointer;
     background-color: #007BFF;
     color: white;
-    border: none;
+    border: black;
     border-radius: 5px;
 }
 
@@ -33,4 +37,6 @@ button:hover {
 #result {
     margin-top: 20px;
     font-weight: bold;
+    border-color: black;
+    border-width: 5px;
 }
