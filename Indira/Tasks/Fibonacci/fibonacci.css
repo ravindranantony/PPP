@@ -1,13 +1,19 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    background-image: url('/images/pp_fibanacci_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     }
     .container {
-    background-color: #fff;
+    background-color: #d5da76;
+    background-position: bottom;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -31,3 +37,5 @@ body {
     margin-top: 20px;
     font-weight: bold;
     }
+    
+    
