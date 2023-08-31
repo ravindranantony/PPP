@@ -1,74 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .container {
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
-            text-align: center;
-            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-            opacity: 0;
-        }
-
-        .container:hover {
-            transform: scale(1.05);
-        }
-
-        h1, p {
-            margin: 0;
-            padding: 0;
-            display: none; /* Initially hide the text */
-        }
-
-        p {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Ravi</h1>
-        <p>Front-end Web Developer</p>
-        <p>Email: johndoe@example.com</p>
-        <p>Skills: HTML, CSS, JavaScript, ReactJS, MongoDB</p>
-        <p>Tasks1: <a href="/ravi/tasks/fibonacci/fibonacci.html">Task Fibonacci</a></p>
-        <p>Tasks2: <a href="/ravi/tasks/calculator/calc.html">Task Calculator</a></p>
-        <p>Tasks2: <a href="/ravi/tasks/tictactoe/index.html">Task Calculator</a></p>
-    </div>
-
-    <script>
-        // Fade in the container when the page loads
-        window.addEventListener('DOMContentLoaded', (event) => {
-            const container = document.querySelector('.container');
-            container.style.opacity = "1";
-
-            // Make the text appear one by one
-            let delay = 500; // Start delay in milliseconds
-            const increment = 500; // Incremental delay for each text
-            container.querySelectorAll('h1, p').forEach((element) => {
-                setTimeout(() => {
-                    element.style.display = 'block';
-                }, delay);
-                delay += increment;
-            });
-        });
-    </script>
-</body>
+<html>
+    <head>
+        <title>Neeja S</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Replace with your own image URL -->
+            <img src="/images/Flower.jpeg" alt="Natural Image" resolution="300" width="204" height="221">
+            <h1>Natural Scenories</h1>
+            <p>I love nature because feel free at any pressure situations</p>
+                    </div>
+    </body>
 </html>
