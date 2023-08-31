@@ -5,7 +5,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #f0f0f0;
-  background-image: url(yazhini.jpg);
+  background-image: url(https://images.unsplash.com/photo-1503455637927-730bce8583c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,7 +14,7 @@ body {
 .calculator {
   border: 1px solid #ccc;
   padding: 20px;
-  background-color: #fff;
+  background-color: #0e58ad;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   
 }
