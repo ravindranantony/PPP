@@ -1,32 +1,34 @@
 body{
+    background-image: url(https://media.istockphoto.com/id/1408116930/photo/lavender-flower-blooming-fields-in-endless-rows-sunset-shot.jpg?s=1024x1024&w=is&k=20&c=jIzZlSxM_6An7eXgZpt6wq9F3-SnTcF_NPoZrBtnPzc=);
+    
     font-family: Arial, sans-serif;
-    background-color:#f4f4f4 ;
     display: flex;
     justify-content: center;
     align-items: center;
     height:100vh;
 }
 .container{
-    background-color: #fff;
+    background-color: rgb(185, 17, 96);
     padding:20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0,1);
     width: 80%;
     max-width: 500px;
     text-align: center;
+    color: rgb(28, 7, 83);
 }
 button{
     margin-top: 10px;
     padding: 10px 20px;
     cursor: pointer;
-    background-color:#007BFF ;
+    background-color:#128321 ;
     color: white;
     border:none ;
     border-radius: 5px;
 }
 
 button:hover{
-    background-color:#0056b3;
+    background-color:#e216e2;
 
 }
 #result{

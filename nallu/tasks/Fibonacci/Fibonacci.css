@@ -5,6 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url("/images/Flower.jpeg");
+    background-size: cover;
 }
 
 .container {
