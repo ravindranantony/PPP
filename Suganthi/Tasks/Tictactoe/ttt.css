@@ -9,7 +9,7 @@ body {
 
 .game-container {
     text-align: center;
-    background-color: #fff;
+    background-color: #a8d688;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -45,7 +45,7 @@ body {
 button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #007bff;
+    background-color: #508d6c;
     border: none;
     color: white;
     cursor: pointer;
