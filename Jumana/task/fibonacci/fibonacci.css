@@ -1,6 +1,9 @@
+h1 {
+    color: rgb(235, 16, 52);
+  }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ecdbd5;
     display: flex;
     justify-content: center;
     align-items: center;
