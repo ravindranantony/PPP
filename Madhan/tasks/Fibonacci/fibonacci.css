@@ -1,6 +1,6 @@
 body {
     font-family: system-ui;
-    background-color: #f4f4f4;
+    background-color: #b1aeae;
     background-image: url('/images/Fibo_Madhan.jpg');
     background-size: contain;
     background-attachment: fixed;
@@ -31,7 +31,7 @@ body {
     border-radius: 5px;
     }
     button:hover {
-    background-color: #0056b3;
+    background-color: #f36412;
     }
     #result {
     margin-top: 20px;
