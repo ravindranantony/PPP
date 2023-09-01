@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #calculator {
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(5, 219, 23, 0.2);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 400px;
+  }
+  
+  #display {
+    grid-column: span 4;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 10px;
+    text-align: right;
+    color: #fff;
+  }
+  
+  button {
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #777;
+  }
