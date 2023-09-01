@@ -1,9 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui;
     background-color: #f4f4f4;
-    background-image: url('/images/pp_fibanacci_bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('/images/Fibo_Madhan.jpg');
+    background-size: contain;
     background-attachment: fixed;
     background-position: center;
     display: flex;
@@ -12,11 +11,12 @@ body {
     height: 100vh;
     }
     .container {
-    background-color: #d5da76;
+    background-color: #d11783;
     background-position: bottom;
+    border-color: aquamarine;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 100px / 120px;
+    box-shadow: 0 0 10px rgba(248, 213, 213, 0.1);
     width: 80%;
     max-width: 500px;
     text-align: center;
@@ -25,8 +25,8 @@ body {
     margin-top: 10px;
     padding: 10px 20px;
     cursor: pointer;
-    background-color: #007BFF;
-    color: white;
+    background-color: #1b0ed3;
+    color: rgb(231, 214, 58);
     border: none;
     border-radius: 5px;
     }
