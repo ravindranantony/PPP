@@ -41,7 +41,7 @@ function checkWinner() {
     }
     if (!gameBoard.includes('')) {
         gameActive = false;
-        document.getElementById('winner-message').textContent = "It's a tie!";
+        document.getElementById('winner-message').textContent = "It's a tie!!";
     }
 }
 
