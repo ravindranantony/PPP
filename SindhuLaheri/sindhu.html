@@ -39,6 +39,14 @@
     border-radius: 5px;
     cursor: pointer; 
   }
+  #mytasks-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
   .social-icons {
     font-size: 30px;
@@ -61,7 +69,9 @@
     <p>Full Stack Developer</p>
     <p>AI</p>
     <button id="proceed-button">Proceed</button>
-    <p> <a href="/SindhuLaheri/Tasks/Tasks.html">My Tasks</a></p>
+    <button id="mytasks-button">My Tasks</button>
+    <!--<p> <a href="/SindhuLaheri/Tasks/Tasks.html">My Tasks</a></p> -->
+    
   
     
     <div class="social-icons">
@@ -101,7 +111,17 @@
       // Add your desired action when the button is clicked
      // alert('Proceed button clicked!');
       // You can replace the above alert with any other action you want to perform.
-      window.location.replace("index.html");
+      window.location.replace("/index.html");
+
+    });
+    const mytasksButton = document.getElementById('mytasks-button');
+    
+    mytasksButton.addEventListener('click', () => {
+      // Add your desired action when the button is clicked
+     // alert('Proceed button clicked!');
+      // You can replace the above alert with any other action you want to perform.
+      window.location.replace("/SindhuLaheri/Tasks/Tasks.html");
+
     });
   </script>
 </body>
