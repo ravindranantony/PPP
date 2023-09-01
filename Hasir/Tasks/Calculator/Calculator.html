@@ -1,52 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    
-    
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    
-    <link rel="stylesheet" href="Calculator.css" />
-  </head>
-  <body>
-    <div class="calculator">
-      <center><h1><p style="color:#f7d8e5f6">CALCULATOR</p></h1></center>
-      <div class="display">
-        <input type="text" placeholder="0" id="input" disabled />
+<head>
+   <link rel="stylesheet" href="Calculator.css">
+   <title>Calulator</title>
+</head>
+<body>
+   <div class="main">
+      <input type="text" id = 'res'>
+      <div class="btn">
+         <input type="button" value = 'C' onclick = "Clear()">
+         <input type="button" value = '%' onclick = "Solve('%')">
+         <input type="button" value = '←' onclick ="Back('←')">
+         <input type="button" value = '/' onclick = "Solve('/')">
+         <br>
+         <input type="button" value = '7' onclick = "Solve('7')">
+         <input type="button" value = '8' onclick = "Solve('8')">
+         <input type="button" value = '9' onclick = "Solve('9')">
+         <input type="button" value = 'x' onclick = "Solve('*')">
+         <br>
+         <input type="button" value = '4' onclick = "Solve('4')">
+         <input type="button" value = '5' onclick = "Solve('5')">
+         <input type="button" value = '6' onclick = "Solve('6')">
+         <input type="button" value = '-' onclick = "Solve('-')">
+         <br>
+         <input type="button" value = '1' onclick = "Solve('1')">
+         <input type="button" value = '2' onclick = "Solve('2')">
+         <input type="button" value = '3' onclick = "Solve('3')">
+         <input type="button" value = '+' onclick = "Solve('+')">
+         <br>
+         <input type="button" value = '00'onclick = "Solve('00')">
+         <input type="button" value = '0' onclick = "Solve('0')">
+         <input type="button" value = '.' onclick = "Solve('.')">
+         <input type="button" value = '=' onclick = "Result()">
       </div>
-      <div class="buttons">
-        
-        <button value="AC" id="clear" class="operation-button" >AC</button>
-        
-        <button value="DEL" id="erase" class="operation-button" >DEL</button>
-        <button value="/" class="operation-button button">/</button>
-        <button value="*" class="operation-button button" >*</button>
-
-        <button value="7" class="digit-button button" />7</button>
-        <button value="8" class="digit-button button" />8</button>
-        <button value="9" class="digit-button button" />9</button>
-        <button value="-" class="operation-button button" />-</button>
-
-        <button value="6" class="digit-button button" />6</button>
-        <button value="5" class="digit-button button" />5</button>
-        <button value="4" class="digit-button button" />4</button>
-        <button value="+" class="operation-button button" />+</button>
-
-        <button value="1" class="digit-button button" />1</button>
-        <button value="2" class="digit-button button" />2</button>
-        <button value="3" class="digit-button button" />3</button>
-
-        <button value="=" id="equal" class="operation-button" />=</button>
-        <button value="0" class="digit-button button" id="zero" />0</button>
-        <button value="." class="digit-button button" />.</button>
-    
-    </div>
-    
-    <script src="Calculator.js"></script>
-  </body>
+   </div>
+   <script src = 'Calculator.js' ></script>
+</body>
 </html>
