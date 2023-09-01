@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url("../../../images/ironman123.jpg");
+    background-size: cover;
+    background-position:center;
+    position: relative;
+
+  }
+  
+  .calculator {
+    background-color: #fff;
+    
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #result {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn.operator {
+    background-color: #ff9800;
+    color: #fff;
+  }
+  
+  .btn.clear {
+    background-color: #ff5722;
+    color: #fff;
+  }
+  

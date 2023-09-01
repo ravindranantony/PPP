@@ -1,138 +1,76 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Pythagorean Theorem Calculator</title>
-</head>
-<body>
-    <h1>Pythagorean Theorem Calculator</h1>
-    <label for="sideA">Enter length of side A:</label>
-    <input type="number" id="sideA" step="any">
-    <br>
-    <label for="sideB">Enter length of side B:</label>
-    <input type="number" id="sideB" step="any">
-    <br>
-    <button onclick="calculateHypotenuse()">Calculate Hypotenuse</button>
-    <p id="result"></p>
-
-    <script>
-        function calculateHypotenuse() {
-            const sideA = parseFloat(document.getElementById("sideA").value);
-            const sideB = parseFloat(document.getElementById("sideB").value);
-
-            if (isNaN(sideA) || isNaN(sideB)) {
-                document.getElementById("result").textContent = "Please enter valid side lengths.";
-                return;
-            }
-
-            const hypotenuse = Math.sqrt(sideA ** 2 + sideB ** 2);
-            document.getElementById("result").textContent = "Hypotenuse: " + hypotenuse.toFixed(2);
-        }
-    </script>
-    <div class="container">
-        <img src="/images/pic.jpg" alt="Stock Image">
-
-    </div>
-      
-
-
-
-
-
-<body>
-    <h1 style="font-size: medium; color: aquamarine;font-style: italic;">Active Volcanoes</h1>
-    
-    <h2>Introduction <p>
-
-     There are approximately 500 active volcanoes in the world today, not including those underneath the oceans. <br>In fact, as you read these words, there are probably 20 volcanoes erupting right now.<br> Between 50-70 volcanoes are erupting every year, 160 have erupted in the last decade. <br>And there are about 550 that have erupted since the beginning of recorded history.
-</p>
-    </h2>
-    
-    <h2>Data Analysis</h2>
-    
-    <h3>Table 1: Sample Data</h3>
-    <table>
-        <tr>
-            <th>Volcano Name	</th>
-            <th>Country</th>
-            <th>Elevation (m)
-            </th>
-        </tr>
-        <tr>
-            <td>Category 1</td>
-            <td>Aguilera	</td>
-            <td>Agung</td>
-        </tr>
-        <tr>
-            <td>Category 2</td>
-            <td>Chile</td>
-            <td>Indonesia</td>
-        </tr>
-        <tr>
-            <td>Category 3</td>
-            <td>2546</td>
-            <td>3142</td>
-        </tr>
-    </table>
-    
-    <h3>Chart 1: Bar Chart</h3>
-    <img src="/images/volc.jpg" alt="Bar Chart">
-    
-    <h3>Chart 2: Line Chart</h3>
-    <img src="/images/volc2.jpg" alt="Line Chart">
-    
-    
-
-
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3-Letter Wordle Game</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-</style>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            text-align: center;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        h1, p {
+            margin: 0;
+            padding: 0;
+            display: none; /* Initially hide the text */
+        }
+
+        p {
+            margin-top: 10px;
+        }
+    </style>
+</head> 
 <body>
-  <h1>3-Letter Wordle Game</h1>
-  <p>Guess the 3-letter word:</p>
-  <div>
-    <input type="text" id="guessInput" maxlength="3" autocomplete="off">
-    <button onclick="checkGuess()">Guess</button>
-  </div>
-  <p id="result"></p>
+    <div class="container">
+        <h1>Nallathayammal</h1>
+        <p>Front-end Web Developer</p>
+        <p>Email: arasusaran@gmail.com</p>
+        <p>Skills: HTML, CSS, JavaScript</p>
+        <p>Tasks: <a href="/nallu/tasks/fibonacci/fibonacci.html">Task Fibonacci</a></p>
+        <p>Tasks: <a href="/nallu/tasks/Calculator/calc.html">Task Calculator</a></p>
+        <p>Tasks: <a href="/nallu/tasks/tictactoe/ttt.html">Task TicTacToe</a></p>
 
-  <script>
-    const wordList = ["cat", "dog", "bat", "hat", "map", "pen", "red", "sun"];
-    const secretWord = wordList[Math.floor(Math.random() * wordList.length)];
-    const MAX_ATTEMPTS = 5;
-    let attempts = 0;
 
-    function checkGuess() {
-      const guess = document.getElementById("guessInput").value.toLowerCase();
-      if (guess.length !== 3) {
-        alert("Please enter a 3-letter word.");
-        return;
-      }
+    </div>
 
-      attempts++;
-      if (guess === secretWord) {
-        displayResult(`Congratulations! You guessed the word "${secretWord}" in ${attempts} attempts.`);
-      } else if (attempts === MAX_ATTEMPTS) {
-        displayResult(`Sorry, you've used all ${MAX_ATTEMPTS} attempts. The word was "${secretWord}".`);
-      } else {
-        displayResult(`Attempt ${attempts}: Keep guessing!`);
-      }
-    }
+    <script>
+        // Fade in the container when the page loads
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const container = document.querySelector('.container');
+            container.style.opacity = "1";
 
-    function displayResult(message) {
-      document.getElementById("result").textContent = message;
-      if (attempts === MAX_ATTEMPTS || guess === secretWord) {
-        document.getElementById("guessInput").disabled = true;
-      }
-    }
-  </script>
+            // Make the text appear one by one
+            let delay = 500; // Start delay in milliseconds
+            const increment = 500; // Incremental delay for each text
+            container.querySelectorAll('h1, p').forEach((element) => {
+                setTimeout(() => {
+                    element.style.display = 'block';
+                }, delay);
+                delay += increment;
+            });
+        });
+    </script>
 </body>
 </html>
