@@ -1,37 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: system-ui;
+    background-color: #b1aeae;
+    background-image: url('/images/Fibo_Madhan.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
     display: flex;
-    justify-content: center;4
+    justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.container {
-    background-color: #fff;
+    }
+    .container {
+    background-color: #d11783;
+    background-position: bottom;
+    border-color: aquamarine;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 100px / 120px;
+    box-shadow: 0 0 10px rgba(248, 213, 213, 0.1);
     width: 80%;
     max-width: 500px;
     text-align: center;
-}
-
-button {
+    }
+    button {
     margin-top: 10px;
     padding: 10px 20px;
     cursor: pointer;
-    background-color: #007BFF;
-    color: white;
+    background-color: #1b0ed3;
+    color: rgb(231, 214, 58);
     border: none;
     border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#result {
+    }
+    button:hover {
+    background-color: #f36412;
+    }
+    #result {
     margin-top: 20px;
     font-weight: bold;
-}
+    }
+    
+    
