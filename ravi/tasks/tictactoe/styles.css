@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, border 0.3s;
+    border: 2px solid transparent;  /* Default transparent border to prevent shifting */
+}
+
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);  /* Slight zoom effect on hover */
+    border: 2px solid #FF6B6B;  /* Strong border on hover */
+}
+
+.cell.x, .cell.o {
+    pointer-events: none;
+}
+
+.cell.x::before {
+    content: 'X';
+    color: #FF6B6B;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.cell.o::before {
+    content: 'O';
+    color: #FFD182;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
