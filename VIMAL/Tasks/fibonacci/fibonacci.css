@@ -2,9 +2,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 100vh;
+    background-image: url("/images/im12.jpg");
+    background-size:cover;
+    background-position:center;
+    position:static;
     }
     .container {
     background-color: #fff;
