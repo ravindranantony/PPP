@@ -1,43 +1,65 @@
 let currentPlayer = 'X';
-let board = [
-    ['', '', ''],
-    ['', '', ''],
-    ['', '', '']
-];
-let gameOver = false;
+let gameBoard = ['', '', '', '', '', '', '', '', ''];
+let gameActive = true;
 
-function makeMove(row, col) {
-    if (!gameOver && board[row][col] === '') {
-        board[row][col] = currentPlayer;
-        document.getElementById('board').children[row * 3 + col].textContent = currentPlayer;
+const winningCombinations = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+];
+
+function makeMove(tileIndex) {
+    if (gameBoard[tileIndex] === '' && gameActive) {
+        gameBoard[tileIndex] = currentPlayer;
+        document.getElementById('board').children[tileIndex].textContent = currentPlayer;
+        document.getElementById('board').children[tileIndex].classList.add('filled');
         checkWinner();
-        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+        togglePlayer();
     }
+}
+
+function togglePlayer() {
+    currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
 }
 
 function checkWinner() {
-    const winningCombos = [
-        [[0, 0], [0, 1], [0, 2]],
-        [[1, 0], [1, 1], [1, 2]],
-        [[2, 0], [2, 1], [2, 2]],
-        [[0, 0], [1, 0], [2, 0]],
-        [[0, 1], [1, 1], [2, 1]],
-        [[0, 2], [1, 2], [2, 2]],
-        [[0, 0], [1, 1], [2, 2]],
-        [[0, 2], [1, 1], [2, 0]]
-    ];
-
-    for (const combo of winningCombos) {
+    for (const combo of winningCombinations) {
         const [a, b, c] = combo;
-        if (board[a[0]][a[1]] && board[a[0]][a[1]] === board[b[0]][b[1]] && board[a[0]][a[1]] === board[c[0]][c[1]]) {
-            document.getElementById('message').textContent = `Player ${currentPlayer} wins!`;
-            gameOver = true;
+        if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
+            document.getElementById('board').children[a].classList.add('winner');
+            document.getElementById('board').children[b].classList.add('winner');
+            document.getElementById('board').children[c].classList.add('winner');
+            gameActive = false;
+            document.getElementById('winner-message').textContent = `Player ${currentPlayer} wins!`;
             return;
         }
     }
-
-    if (!board.flat().includes('')) {
-        document.getElementById('message').textContent = "It's a draw!";
-        gameOver = true;
+    if (!gameBoard.includes('')) {
+        gameActive = false;
+        document.getElementById('winner-message').textContent = "It's a tie!";
     }
 }
+
+function resetGame() {
+    currentPlayer = 'X';
+    gameBoard = ['', '', '', '', '', '', '', '', ''];
+    gameActive = true;
+
+    const tiles = document.querySelectorAll('.tile');
+    tiles.forEach(tile => {
+        tile.textContent = '';
+        tile.classList.remove('filled', 'winner');
+    });
+
+    document.getElementById('winner-message').textContent = '';
+}
+
+document.getElementById('clear-button').addEventListener('click', resetGame);
+
+// Initialize the game
+resetGame();
