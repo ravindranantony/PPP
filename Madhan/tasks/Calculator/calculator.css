@@ -1,60 +1,53 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    background-image: url('/images/P3_calc_logo.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.calculator {
-    background-color: #12e1ec;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-#result {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
-
-.buttons {
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+  }
+  body{
+    background-color: #495250;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-
-button {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
+    height: 100vh;
+    place-items: center;
+  }
+  .main{
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 6px; 
+  }
+  .main input[type='text'] {
+    width: 88%;
+    position: relative;
+    height: 80px;
+    top: 5px;
+    text-align: right;
+    padding: 3px 6px;
+    outline: none;
+    font-size: 40px;
+    border: 5px solid black;
+    display: flex;
+    margin: auto;
+    border-radius: 6px;
+    color: black;
+  }
+  .btn input[type='button']{
+    width:90px;
+    padding: 2px;
+    margin: 2px 0px;
+    position: relative;
+    left: 13px;
+    top: 20px;
+    height: 60px;
     cursor: pointer;
-    transition: 0.3s;
-    font-weight: 400;
-}
-
-button:hover {
-    background-color: #f4f4f4;
-    transform: scale(1.1);
-}
-
-button:active {
-    transform: scale(1);
-}
+    font-size: 18px;
+    transition: 0.5s;
+    background-color: #495250;
+    border-radius: 6px;
+    color: white;
+  }
+  .btn input[type='button']:hover{
+    background-color: black;
+    color: white;
+  }
