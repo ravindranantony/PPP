@@ -2,10 +2,11 @@
 
 body, h1, h2, h3, p {
     
-    background: url(https://images.unsplash.com/photo-1503455637927-730bce8583c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80) no-repeat center center fixed;
-    
+    background: url(https://images.unsplash.com/photo-1436262513933-a0b06755c784?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80);
+    background-repeat:no no-repeat ;
     margin: 0;
     padding: 0;
+    color: #333;
 }
 
 h1{
@@ -20,7 +21,7 @@ padding-top: 5%;
     font-style:sans-serif;
     
     
-    color: #0e0b0b;
+    color: #f2fafd;
     
 }
 
@@ -57,7 +58,7 @@ nav ul li {
 }
 
 nav a {
-    color: rgb(17, 16, 16);
+    color: rgb(22, 12, 12);
     text-decoration: none;
     
 
