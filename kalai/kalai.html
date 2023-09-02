@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Portfolio</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #3498db, #e74c3c);
+    animation: gradientAnimation 10s infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background: linear-gradient(to bottom, #3498db, #e74c3c);
+    }
+    50% {
+      background: linear-gradient(to bottom, #e74c3c, #3498db);
+    }
+    100% {
+      background: linear-gradient(to bottom, #3498db, #e74c3c);
+    }
+  }
+
+  .container {
+    text-align: center;
+    color: white;
+  }
+
+  .project-link {
+    display: block;
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Welcome to My Portfolio
+    </h1>
+  <p>Check out my projects:</p>
+  <a class="project-link" href="project1.html">Project 1</a>
+  <a class="project-link" href="project2.html">Project 2</a>
+  <a class="project-link" href="project3.html">Project 3</a>
+</div>
+</body>
+</html>
