@@ -85,9 +85,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
+    
 }
 
 .project-box {
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     width: calc(25% - 20px); /* Adjust the width as needed */
     background-color: #fff;
     border: 1px solid #ddd;
@@ -96,6 +99,7 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    
 }
 
 .project-box img {
@@ -118,6 +122,7 @@
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s;
+    
 }
 
 .project-box:hover .project-info {
@@ -125,6 +130,7 @@
 }
 
 .left-side{
+    
     width: 100px;
     height: 100px;
 }
@@ -132,6 +138,47 @@
     width: 200px;
     height: 200px;
 }
+/* Styles for the box section */
+.box-section {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+    
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+.boxL {
+    border: 2px solid #000;
+    border-radius: 10px;
+    height: 80px;
+    width: calc(15% - 20px); /* Adjust the width and margin as needed */
+    background-color: #fff;
+    padding: 15px 20px;
+    margin: 0 10px 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.boxR{
+    border: 2px solid #000;
+    border-radius: 15px;
+    height: 80px;
+    width: calc(80% - 20px); /* Adjust the width and margin as needed */
+    background-color: #fff;
+    padding:  15px 20px;
+    margin: 10 10px 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
 
         
 
@@ -140,6 +187,9 @@
             /* Adjust font sizes, margins, or padding for smaller screens */
             header h1 {
                 font-size: 28px;
+            }
+            .box {
+                width: calc(50% - 20px); /* Adjust for two boxes in a row on smaller screens */
             }
 
             nav {
