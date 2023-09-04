@@ -1,44 +1,28 @@
-h1 {
-    color: rgb(3, 3, 97);
-  }
-body {
-    font-family: Arial, sans-serif;
-    background-color:burlywood;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('fb-img.webp');
-    background-size: cover;
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url(fb-img.webp) ;
+    background-size: cover; /* Adjust this property as needed */
     background-repeat: no-repeat;
-   
+
 }
 
-.container {
-    background-color:rgb(238, 229, 229);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Make the container take up the full viewport height */
+    
+    
 }
 
-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    cursor: pointer;
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
+.content{
+    background-color:bisque; 
+    margin:5rem
 
-button:hover {
-    background-color: #0056b3;
-}
-
-#result {
-    margin-top: 20px;
-    font-weight: bold;
 }

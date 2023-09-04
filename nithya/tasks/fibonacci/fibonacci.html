@@ -8,12 +8,34 @@
 </head>
 <body>
     <div class="container">
-        <h1>Fibonacci Series Generator</h1>
-        <label for="number">Enter the length of the Fibonacci series:</label>
+        <div class="content">
+            <h1>Fibonacci Series</h1>
+        <label for="number">Enter a number:</label>
         <input type="number" id="number" placeholder="e.g., 10">
         <button onclick="generateFibonacci()">Generate</button>
         <div id="result"></div>
+        </div>
     </div>
-    <script src="fibonacci.js"></script>
+
+    <script>
+        function generateFibonacci() {
+            const numInput = document.getElementById("number");
+            const resultDiv = document.getElementById("result");
+            const n = parseInt(numInput.value);
+
+            if (isNaN(n) || n < 1) {
+                resultDiv.textContent = "Please enter a valid positive number.";
+                return;
+            }
+
+            const series = [0, 1];
+            for (let i = 2; i < n; i++) {
+                const nextNumber = series[i - 1] + series[i - 2];
+                series.push(nextNumber);
+            }
+
+            resultDiv.textContent = "Fibonacci Series: " + series.join(", ");
+        }
+    </script>
 </body>
 </html>
