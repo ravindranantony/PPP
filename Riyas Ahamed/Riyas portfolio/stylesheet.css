@@ -56,6 +56,8 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 24px;
+    /* Add padding to the top to create space for the fixed navigation bar */
+    padding-top: 60px; /* Adjust the padding as needed */
     scroll-margin-top: 60px;
 }
 
@@ -185,7 +187,7 @@ header {
 /* Styles for the box section */
 .box-section {
     background-color: white;
-    padding: 40px 0;
+    padding: 100px 10px;
     text-align: center;
     
 }
@@ -195,7 +197,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 100%;
-    margin: 30px 300px;
+    margin: 30px 100px;
     
 }
 
@@ -247,10 +249,13 @@ header {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #007bff; /* Button background color */
+    /* Button background color */
     color: #fff; /* Button text color */
     text-decoration: none;
     border-radius: 5px; /* Rounded corners */
+}
+.CV{
+    background-color: #007bff;
 }
 
 .contact-details a:hover {
@@ -282,18 +287,24 @@ header {
 }
 
 
-
-
-        
-
         /* Responsive Styles */
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 576px) {
             /* Adjust font sizes, margins, or padding for smaller screens */
             header h1 {
                 font-size: 28px;
             }
             .box {
                 width: calc(50% - 20px); /* Adjust for two boxes in a row on smaller screens */
+            }
+            .section {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                /* Add padding to the top to create space for the fixed navigation bar */
+                padding-top: 60px; /* Adjust the padding as needed */
+                scroll-margin-top: 60px;
             }
 
             nav {
@@ -315,11 +326,12 @@ header {
                 flex-direction: column;
             }
 
-            .left-side,
             .right-side {
                 flex-basis: 100%;
+                font-size: 14px;
             }
             .left-side{
+                flex-basis: 100%;
                 width: 100px;
                 height: 100px;
             }
@@ -342,8 +354,33 @@ header {
                 height: auto;
                 border-radius: 50%; /* Makes the photo circular */
             }
+            .project-boxes {
+                flex-direction: row; /* Display projects in a row */
+                flex-wrap: wrap; /* Allow wrapping */
+            }
             
-        }
+            .project-box {
+                width: calc(50% - 90px); /* 2 columns with spacing */
+                margin: 0 10px 20px 0; /* Adjust margins as needed */
+            }
+            .box-container {
+                flex-direction: column; /* Change to column layout */
+                align-items: center; /* Center-align the boxes */
+                margin: 0 auto; /* Remove the margin to center the boxes */
+            }
+            
+            .boxL{
+                width: 25%;
+            }
+            .boxR {
+                font-size: 20px;
+                width: 100%; /* Make each box full-width on smaller screens */
+                padding-bottom: 50px;
+                margin: 0 0 30px; /* Adjust margin as needed */
+            }}
+        
+            
+        
         
         /* Styles for the Projects section */
 
