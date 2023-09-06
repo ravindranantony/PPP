@@ -4,7 +4,10 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #c2cbce;
+    background-image: url('/images/calc\ bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
   }
   

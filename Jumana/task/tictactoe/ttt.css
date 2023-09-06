@@ -1,12 +1,17 @@
 /* Reset default browser styles */
-body, h1, button {
+h1 ,button {
     margin: 0;
     padding: 0;
     font-family: 'Finger Paint', cursive;
   }
 
   body {
-    background-color: #e1e4ff;
+    background-image: url('/images/ttt\ image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Finger Paint', cursive;
   }
   
   .container {
@@ -26,7 +31,7 @@ body, h1, button {
   #restartBtn {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #469af4;
+    background-color: #528fd9;
     color: white;
     border: none;
     border-radius: 5px;
@@ -43,7 +48,7 @@ body, h1, button {
   .box {
     width: 100px;
     height: 100px;
-    background-color: #e79999;
+    background-color: #e57081;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +58,7 @@ body, h1, button {
   }
   
   .box.win {
-    background-color: #7de7a6;
+    background-color: #7fe094;
   }
   
   
