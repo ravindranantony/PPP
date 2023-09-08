@@ -22,7 +22,22 @@ body{
 }
 
 .content{
-    background-color:bisque; 
-    margin:5rem
+    background-color:lightblue; 
+    padding:30px;
+    border-radius: 2rem;
 
 }
+
+#number{
+    height: 1.5rem;
+    border-radius: .5rem;
+}
+
+ button {
+            width: 100px; /* Adjust the width as needed */
+            border-radius: 3px;
+            height: 2rem;
+            border-radius: .8rem;
+            font-weight: bold;
+        }
+
