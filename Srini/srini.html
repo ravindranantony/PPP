@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+         /*
+               margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #b4c7e4, #847ceb);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            */
+            background-image: url('https://images.pexels.com/photos/221471/pexels-photo-221471.jpeg?cs=srgb&dl=pexels-pixabay-221471.jpg&fm=jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+       /* .container { 
+            background-color: rgba(252, 249, 249, 0.8);
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        } */
+        .menu a{
+		text-decoration: none;
+		color:rgb(12, 37, 179);
+		padding: 20px 20px;
+		font-size: 20px;
+		position:relative;
+
+	}
+	.menu a:before{
+		content: '';
+		position: absolute;
+		top:0;
+		left:0;
+		width:0%;
+		height: 100%;
+		border-top: 4px solid rgb(9, 223, 91);
+		z-index: 1;
+		transition: 0.4s linear;
+	}
+	.menu a:hover:before{
+		width:90%;
+	}
+
+
+        img {
+            max-width: 100px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+        img {
+  position: absolute;
+  right: 0;
+  left: 1150px;
+  top: 50px;
+ }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #73e96f;
+            color: rgb(34, 13, 13);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        a.button:hover {
+            background-color: #feb47b;
+        }
+        div.details {
+  position: absolute;
+  top: 500px;
+  right: 1100px;
+  width: 200px;
+  height: 60Px;
+  border: 3px solid #73AD21;
+}
+div.details1 {
+  position: absolute;
+  top: 550px;
+  right: 0px;
+  width: 200px;
+  height: 100Px;
+}
+</style>
+</head>
+<body>
+  
+    
+     <!--<div class="container">-->
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Services</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </div>
+        <!-- Replace with your own image URL -->
+        <img src="/images/My pic.jpg" alt="Stock Image">
+        <h4><marquee>WELCOME TO MY PAGE</marquee></h4>
+       <div class="para">
+        <p> To leverage my skills in full stack web development and AI to create innovative and 
+            intelligent web applications.<Br> By combining my expertise in frontend and backend 
+            technologies with AI algorithms, I aim to deliver user-centric<Br> solutions that 
+            enhance user experiences and drive business growth.</p>
+            </div>
+    <div class="details"> 
+        <p>SRINI - Fullstack Developer WEB/AI</p>
+        </div>
+          <div class="details1"> 
+        <a href="https://pepperprogrammingplus.vercel.app/" class="button">Proceed</a>
+    </div>   
+    <!-- </div> -->
+</body>
+</html>
