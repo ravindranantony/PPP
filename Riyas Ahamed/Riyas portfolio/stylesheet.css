@@ -1,28 +1,67 @@
-        /* Styles for the navigation bar */
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
+      /* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
 
-        nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px 0;
-        }
+/* Style the header and navbar */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s;
+    z-index: 1000;
+}
 
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: bold;
-        }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-         /* Custom CSS for the layout */
+.navbar-logo {
+    font-size: 24px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 10px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+    color: #007bff;
+}
+
+/* Style the sections */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    /* Add padding to the top to create space for the fixed navigation bar */
+    padding-top: 60px; /* Adjust the padding as needed */
+    scroll-margin-top: 60px;
+}
+
+    /* Custom CSS for the layout */
          .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -37,10 +76,16 @@
         .left-side {
             flex-basis: 35%;
         }
+        .left-sides{
+            width: 1000px;
+            height: 1000px;
+        }
 
         .left-side img {
-            max-width: 100%;
-            height: auto;
+            width: 300px;
+            height: 300px;
+            border: 2px solid grey;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
             border-radius: 50%; /* Makes the photo circular */
         }
 
@@ -75,19 +120,24 @@
         }
         /* Styles for the Projects section */
 .projects {
-    background-color: #f5f5f5;
+    background-color: white;
     padding: 40px 0;
     text-align: center;
 }
+/*#f5f5f5;*/
 
 .project-boxes {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
+    
 }
 
 .project-box {
+    border: 2px solid #000;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     width: calc(25% - 20px); /* Adjust the width as needed */
     background-color: #fff;
     border: 1px solid #ddd;
@@ -96,6 +146,7 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    
 }
 
 .project-box img {
@@ -118,6 +169,7 @@
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s;
+    
 }
 
 .project-box:hover .project-info {
@@ -132,14 +184,127 @@
     width: 200px;
     height: 200px;
 }
+/* Styles for the box section */
+.box-section {
+    background-color: white;
+    padding: 100px 10px;
+    text-align: center;
+    
+}
 
-        
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 30px 100px;
+    
+}
+
+.boxL {
+    
+    border: 2px solid red;
+    border-radius: 10px;
+    height: 80px;
+    width: calc(15% - 20px); /* Adjust the width and margin as needed */
+    background-color: #fff;
+    padding: 15px 20px;
+    margin: 0 10px 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.boxR{
+    border: 2px solid blue;
+    border-radius: 15px;
+    height: 80px;
+    width: calc(80% - 20px); /* Adjust the width and margin as needed */
+    background-color: #fff;
+    padding:  15px 20px;
+    margin: 10 10px 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+/* Styles for the contact and social media section */
+.contact-social-section {
+    background-color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-details, .social-media {
+    text-align: center;
+}
+
+.contact-details h2, .social-media h2 {
+    font-size: 24px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+.contact-details a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+}
+.CV{
+    background-color: #007bff;
+}
+
+.contact-details a:hover {
+    background-color: #0056b3; /* Hover background color */
+}
+
+.social-media ul {
+    display: flex; /* Use flexbox */
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.social-media a {
+    
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #007bff; /* Change to your desired link hover color */
+}
+
 
         /* Responsive Styles */
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 576px) {
             /* Adjust font sizes, margins, or padding for smaller screens */
             header h1 {
                 font-size: 28px;
+            }
+            .box {
+                width: calc(50% - 20px); /* Adjust for two boxes in a row on smaller screens */
+            }
+            .section {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 24px;
+                /* Add padding to the top to create space for the fixed navigation bar */
+                padding-top: 60px; /* Adjust the padding as needed */
+                scroll-margin-top: 60px;
             }
 
             nav {
@@ -161,16 +326,61 @@
                 flex-direction: column;
             }
 
-            .left-side,
             .right-side {
                 flex-basis: 100%;
+                font-size: 14px;
             }
             .left-side{
+                flex-basis: 100%;
                 width: 100px;
                 height: 100px;
             }
+            .box-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                max-width: 100%;
+                margin: 0 auto;
+                
+            }
+            .left-side{
+                border: 2px solid grey;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 50%;
+                
+            }
+            .left-side img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 50%; /* Makes the photo circular */
+            }
+            .project-boxes {
+                flex-direction: row; /* Display projects in a row */
+                flex-wrap: wrap; /* Allow wrapping */
+            }
             
-        }
+            .project-box {
+                width: calc(50% - 90px); /* 2 columns with spacing */
+                margin: 0 10px 20px 0; /* Adjust margins as needed */
+            }
+            .box-container {
+                flex-direction: column; /* Change to column layout */
+                align-items: center; /* Center-align the boxes */
+                margin: 0 auto; /* Remove the margin to center the boxes */
+            }
+            
+            .boxL{
+                width: 25%;
+            }
+            .boxR {
+                font-size: 20px;
+                width: 100%; /* Make each box full-width on smaller screens */
+                padding-bottom: 50px;
+                margin: 0 0 30px; /* Adjust margin as needed */
+            }}
+        
+            
+        
         
         /* Styles for the Projects section */
 
