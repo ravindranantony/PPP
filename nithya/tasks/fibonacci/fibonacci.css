@@ -25,11 +25,11 @@ body{
     background-color:lightblue; 
     padding:30px;
     border-radius: 2rem;
-
+    font-weight: bold;
 }
 
 #number{
-    height: 1.5rem;
+    height: 1.8rem;
     border-radius: .5rem;
 }
 
@@ -39,5 +39,6 @@ body{
             height: 2rem;
             border-radius: .8rem;
             font-weight: bold;
+            font-style: italic;
         }
 
