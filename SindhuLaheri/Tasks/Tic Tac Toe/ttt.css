@@ -11,10 +11,7 @@ body {
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
-  
-
-    
-}
+    }
 .board {
     display: grid;
     grid-template-columns: repeat(3, 110px);
