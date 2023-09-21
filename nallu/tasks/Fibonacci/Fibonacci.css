@@ -7,6 +7,8 @@ body {
     height: 100vh;
     background-image: url("/images/Flower.jpeg");
     background-size: cover;
+    background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .container {
