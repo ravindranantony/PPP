@@ -93,8 +93,7 @@ nav a {
 }
 
 /* Projects */
-.project {
-    border: 1px solid #ddd;
+.project{
     padding: 20px;
     margin-bottom: 20px;
 }
