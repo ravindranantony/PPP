@@ -23,10 +23,13 @@ ul {
 a {
   text-decoration: none;
 }
-
+h2
+{
+  text-shadow: 2px 2px;
+}
 .header__wrapper header {
   width: 100%;
-  background: url("../img/bg.jpeg") no-repeat 50% 20% / cover;
+  background: url("../img/wonbg.jpg") no-repeat 50% 20% / cover;
   min-height: calc(100px + 15vw);
 }
 
