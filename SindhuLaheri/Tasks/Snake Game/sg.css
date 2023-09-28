@@ -1,6 +1,4 @@
-/* Import Google font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +11,10 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: #E3F2FD;
-  background-image: url("/images/Flower.jpeg");
-
+  background-image: url('/SindhuLaheri/Images/Snake game.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .wrapper {
   width: 65vmin;
@@ -28,7 +28,7 @@ body {
   box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
 }
 .game-details {
-  color: #B8C6DC;
+  color: greenyellow;
   font-weight: 500;
   font-size: 1.2rem;
   padding: 20px 27px;
@@ -43,10 +43,10 @@ body {
   grid-template: repeat(30, 1fr) / repeat(30, 1fr);
 }
 .play-board .food {
-  background: #FF003D;
+  background: red;
 }
 .play-board .head {
-  background: #60CBFF;
+  background: blue;
 }
 
 .controls {
@@ -79,4 +79,7 @@ body {
     padding: 15px 0;
     font-size: 1rem;
   }
+}
+#myAudio {
+    display: none; /* Hide the audio element */
 }
