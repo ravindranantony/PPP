@@ -1,23 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Snake Game with GFG</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<style>
+		body {
+			background-image: url('img/mal.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding-top: 100px; /* Adjust top padding to position the image */
+		}
+
+		#creator-img {
+			position: absolute;
+			top: 10px; /* Adjust top position as necessary */
+			left: 10px; /* Adjust left position as necessary */
+			width: 100px; /* Adjust the size of the image */
+			height: 100px; /* Adjust the size of the image */
+			border-radius: 50%; /* Creates a circular frame for the image */
+			border: 2px solid #fff; /* Optional: Add a border to the image */
+		}
+	</style>
 </head>
+
 <body>
-    <div class="game-container">
-        <h1>Snake Game</h1>
-        <div class="game-board">
-            <!-- Grid cells for the game board are generated using JavaScript -->
-        </div>
-        <div class="game-info">
-            <div class="score">Score: 0</div>
-            <button class="start-button">Start</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+	<img id="creator-img" src="img/david.png" alt="Creator Image">
+	<h1>Snake Game with
+		<div class="geeks">PEPPER PROGRAMMING PLUS</div>
+	</h1>
+	<canvas id="board"></canvas>
+	<audio src="img/music.mp3" autoplay loop></audio>
 </body>
+
 </html>
+
 
