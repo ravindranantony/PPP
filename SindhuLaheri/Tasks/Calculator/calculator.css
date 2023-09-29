@@ -7,12 +7,19 @@ body {
   margin: 0;
   background-image: url('/images/calsin.jpeg');
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  
+}
+h1 {
+  color: green;
+text-align: center;
+align-items: center;
+justify-content: center;
 }
 
 .calculator {
-  background-color: white;
+  background-color: black;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -20,12 +27,13 @@ body {
 }
 
 #result {
-  width: 100%;
+  width: 95%;
   margin-bottom: 10px;
-  border: none;
-  padding: 10px;
-  font-size: 20px;
+  border: black;
+  padding: 15px 10px;
+  font-size: 25px;
   text-align: right;
+  color: black;
 }
 
 .buttons {
@@ -39,6 +47,7 @@ button {
   font-size: 18px;
   border: none;
   cursor: pointer;
+  background-color: white;
 }
 
 button.operator {

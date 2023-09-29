@@ -6,18 +6,18 @@
   }
   body {
     height: 100vh;
-    background-color: #080000;
+    background-color: #dadff7;
   }
   .calculator {
     width: 400px;
-    background-color: hsl(197, 78%, 2%);
+    background-color: #071013;
     padding: 50px 30px 20px 30px;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     border-radius: 8px;
-    box-shadow: 0 20px 50px rgba(104, 31, 79, 0.4);
+    box-shadow: 0 20px 50px rgba(0, 5, 24, 0.4);
   }
   .display {
     width: 100%;
@@ -69,7 +69,7 @@
   }
   
   .digit-button {
-    background-color: #4d4c4c;
+    background-color: #313131;
   }
   
   .digit-button:hover {
@@ -91,4 +91,3 @@
   a:hover {
     color: #f69906;
   }
-  
