@@ -1,0 +1,16 @@
+/* Write CSS Here */
+body {
+	text-align: center;
+    background-image: url("/PPP/deepa/tasks/pic/bg1.jpg");
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#board
+{
+    margin-top: 30px;
+    border:solid;
+    border-width: 5px;
+    border-color: tomato;
+}
