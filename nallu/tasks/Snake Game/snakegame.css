@@ -1,5 +1,6 @@
 /* Import Google font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +13,8 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: #E3F2FD;
+  background-image: url("/images/Flower.jpeg");
+
 }
 .wrapper {
   width: 65vmin;
