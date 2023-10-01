@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 body {
   display: flex;
@@ -12,6 +12,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: #E3F2FD;
+  background-image: url('/images/Hasir_sky.jpg')
 }
 .wrapper {
   width: 65vmin;
@@ -21,13 +22,14 @@ body {
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
-  background: #293447;
-  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+  background: #ffffff21;
+  box-shadow: 0 20px 40px rgba(45, 64, 139, 0.2);
 }
 .game-details {
   color: #B8C6DC;
   font-weight: 500;
   font-size: 1.2rem;
+  font-style: normal;
   padding: 20px 27px;
   display: flex;
   justify-content: space-between;
@@ -54,7 +56,7 @@ body {
   padding: 25px 0;
   text-align: center;
   font-size: 1.3rem;
-  color: #B8C6DC;
+  color: #18458f;
   width: calc(100% / 4);
   cursor: pointer;
   border-right: 1px solid #171B26;
