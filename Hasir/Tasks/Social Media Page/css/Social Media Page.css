@@ -1,15 +1,11 @@
-/*
- ⚡MAKE SURE TO SUBSCRIBE PROGRAMMER CLOUD⚡
-*/
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lora:ital,wght@0,400;1,600&family=Merriweather&family=Poppins:wght@100&display=swap');
 body {
   width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 ul {
@@ -26,14 +22,14 @@ a {
 
 .header__wrapper header {
   width: 100%;
-  background: url("../img/bg.jpeg") no-repeat 50% 20% / cover;
+  background: url("../img/Hasir_sky.jpg") no-repeat 50% 20% / cover;
   min-height: calc(100px + 15vw);
 }
 
 .header__wrapper .cols__container .left__col {
   padding: 25px 20px;
   text-align: center;
-  max-width: 350px;
+  max-width: 300px;
   position: relative;
   margin: 0 auto;
 }
@@ -50,7 +46,7 @@ a {
   object-fit: cover;
   border-radius: 50%;
   display: block;
-  box-shadow: 1px 3px 12px #001b48;
+  box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.18);
 }
 .header__wrapper .cols__container .left__col .img__container span {
   position: absolute;
@@ -195,6 +191,4 @@ a {
   .header__wrapper .cols__container .right__col nav button {
     margin-top: 0;
   }
-  }
-
-
+}
