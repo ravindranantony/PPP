@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpeg'); /* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.game-container {
+    width: 600px; /* Adjust the width */
+    height: 600px; /* Adjust the height */
+    background-color: #ca3737;
+    border: 2px solid #a2b120;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr); /* Adjust the number of columns */
+    grid-template-rows: repeat(30, 1fr); /* Adjust the number of rows */
+    gap: 1px;
+    background-color: #afd88d;
+    width: 100%;
+    height: 100%;
+}
+
+.game-board div {
+    width: 100%;
+    height: 100%;
+}
+
+.snake {
+    background-image: url('body.png'); /* Replace 'snake-skin.png' with the path to your snake skin image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; /* Rounded corners for the snake segments */
+}
+
+.food {
+    background-image: url('snakefood.png'); /* Replace 'food.png' with the path to your food image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+}
+
+.score {
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
