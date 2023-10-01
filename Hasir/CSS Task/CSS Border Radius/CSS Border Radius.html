@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border Radius</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 10px; /* Added 'px' units to the margin value */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #30c4df;
+            margin: 10px;
+            border-radius: 45px;
+            display: inline-block;
+        }
+
+        .box.red {
+            background-color: #f719b49a;
+            border-radius: 35px; 
+        }
+
+        .box.green {
+            background-color: #d4eb08;
+            border-radius: 25px;
+        }
+
+        .box.blue {
+            background-color: #0a0602;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</body>
+</html>
