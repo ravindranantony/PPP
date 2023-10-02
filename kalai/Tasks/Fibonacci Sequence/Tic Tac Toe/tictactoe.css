@@ -2,7 +2,7 @@ body {
     font-family: 'popins', sans-serif;
     display: flex;
     flex-direction: column;
-    background-image: url('Downloads\tictactoe.jpg');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
     justify-content: center;
     height: 100vh;
