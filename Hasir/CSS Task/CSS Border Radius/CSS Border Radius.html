@@ -36,6 +36,47 @@
             background-color: #0a0602;
             border-radius: 15px;
         }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .box {
+                width: 80px;
+                height: 80px;
+                border-radius: 30px;
+            }
+
+            .box.red {
+                border-radius: 20px;
+            }
+
+            .box.green {
+                border-radius: 15px;
+            }
+
+            .box.blue {
+                border-radius: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                width: 60px;
+                height: 60px;
+                border-radius: 20px;
+            }
+
+            .box.red {
+                border-radius: 15px;
+            }
+
+            .box.green {
+                border-radius: 10px;
+            }
+
+            .box.blue {
+                border-radius: 5px;
+            }
+        }
     </style>
 </head>
 <body>
