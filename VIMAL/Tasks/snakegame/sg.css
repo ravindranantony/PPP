@@ -15,7 +15,7 @@ body {
   background-image: url('/saravanan/Tasks/SnakeGame/sbg.jpg')
 }
 .wrapper {
-  width: 65vmin;
+  width: 66vmin;
   height: 70vmin;
   display: flex;
   overflow: hidden;
