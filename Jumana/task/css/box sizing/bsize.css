@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color:rgb(7, 6, 4);
+}
+.heading {
+    background-color: rgb(67, 92, 90);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.welcome-content {
+    margin: 20px;
+    padding: 100px;
+    color: white;
+}
+h2{
+    text-align: center;
+}
+button{
+    background-color: rgb(61, 233, 61);
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+.footer {
+    background-color: #85b3b8;
+    text-align:start;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    text-decoration: underline;
+}
