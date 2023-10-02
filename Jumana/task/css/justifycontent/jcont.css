@@ -1,0 +1,45 @@
+body{
+    background-color: pink;
+}
+
+h1{
+    text-align: center;
+    color: rgb(7, 7, 9);
+}
+
+.box1{
+    background-color: rgb(14, 155, 19);
+    width:100px;
+    height: 100px;
+    display: flex;
+}
+
+.box2{
+    background-color: rgb(16, 14, 155);
+    width:100px;
+    height: 100px;
+}
+
+.box3{
+    background-color: rgb(192, 183, 12);
+    width:100px;
+    height: 100px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(210, 174, 174);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.flex1{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(125, 185, 164);
+    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+

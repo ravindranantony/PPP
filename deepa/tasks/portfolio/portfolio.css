@@ -1,0 +1,52 @@
+h1{
+    color: red;
+ }
+ body {
+    background-image: url('PPP/deepa/tasks/pic/bg1.jpg');
+    }
+
+.one
+{
+    color: rgb(133, 6, 6);
+}
+h2
+{
+    color: rgb(214, 102, 102);
+  }
+
+  table
+  {
+    height: 500px;
+    width:  500px;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+  }
+  
+  td
+  {
+    padding: 50px;
+    height:90px;
+    width:90px;
+    border:1px ;
+    border-style: solid;
+    border-color: black;
+  }
+  
+  p
+  {
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+
+  div
+  {
+     color:white;
+     background-color: black;
+     border:solid;
+     border-color: rgb(48, 35, 149);
+     border-width: 2px;
+     height:100px;
+     width: 500px;
+     margin-top: 10px;
+  }
