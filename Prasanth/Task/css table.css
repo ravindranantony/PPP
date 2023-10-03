@@ -32,22 +32,23 @@ header, footer, article, nav, div {
   grid-area: footer;
   background-image : url("bg2.jpeg");
   color: aliceblue;
+  align-items: center;
   
   }
   {
     background-color: #E7E9EB;
   }
  
-#mainArticle { 
-  grid-area: article;
-  font-size: large;
-  border: 2px solid red;
-  padding: 10px;
-  border-radius: 50px 20px;
-  word-spacing: 2.5px;   
-  background-image : url("photo-1593005510329-8a4035a7238f.jpg");  
-  color: rgb(33, 36, 34); 
-  font-family :serif
+  #mainArticle { 
+    grid-area: article;
+    font-size: large;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 50px 20px;
+    word-spacing: 2.5px;   
+    background-image : url("ff.jpg");  
+    color: rgb(33, 36, 34); 
+    font-family :serif
   }
   body {
     margin: 0;
@@ -62,7 +63,7 @@ header, footer, article, nav, div {
   }
   #myDIV {
     height:110px;
-    background-image : url("photo-1593005510329-8a4035a7238f.jpg");  
+    background-image : url("photo-1585314062604-1a357de8b000.jpg");  
     display: flex;
     justify-content: space-evenly;
     
