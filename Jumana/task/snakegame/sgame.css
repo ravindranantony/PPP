@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.game-heading {
+    font-size: 36px;
+}
+
+.instruction {
+    font-size: 18px;
+}
+
+.game-board {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    margin: 20px auto;
+    position: relative;
+}
+
+.snake, .food {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+
+.snake {
+    background-color: green;
+}
+
+.food {
+    background-color: red;
+}
+
+.game-over {
+    display: none;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .game-board {
+        width: 80vw;
+        height: 80vw;
+    }
+}

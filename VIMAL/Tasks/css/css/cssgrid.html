@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 380px;
+            display: grid;
+            grid-template-columns: 70px 240px 70px;
+            grid-gap: 10px;
+            grid-template-rows: 50px 200px 50px;
+        }
+
+        .header {
+            background-color:red;
+            grid-column:auto;
+            
+        }
+
+        .left {
+            background-color: aquamarine;
+        }
+        .left {
+            background-color: blue;
+        }
+
+        .center {
+            background-color:deeppink;
+            grid-column: 2/3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right {
+            background-color: yellowgreen;
+        }
+       
+
+        .footer {
+            background-color:black;
+            grid-column: auto;
+           
+        }
+    </style>
+</head>
+<body>
+    
+</body><div class="container">
+    <div class="header"></div>
+    <div class="left"></div>
+    <div class="left"></div>
+    <div class="left"></div>
+    <div class="center"><br><span style="font-size: 60px; font-weight: italic;">VIMAL</span></div>
+    <div class="right"></div>
+    <div class="right"></div>
+    <div class="right"></div>
+    <div class="footer"></div>
+</div>
+
+</html>
