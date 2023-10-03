@@ -1,7 +1,19 @@
+/*.container{
+    background-color:whitesmoke;
+    display:flex
+   justify-content:space-around;
+   padding:1rem
+}
+*/
+
 .pricing-table {
     display: flex;        /* Flex layout so items have equal height  */
     flex-flow: row wrap;  /* Allow items to wrap into multiple lines */
-    max-width: 80%;
+    max-width: 100%;
+    background-color:whitesmoke;
+   justify-content:space-around;
+   /*padding:1rem;*/
+    height:400px;
   }
   .item { 
     flex: 1 0 280px;
@@ -17,7 +29,7 @@
   
   
   /* Styles not relevant to flexbox */
-  .pricing-table {
+    .pricing-table {
     margin: 0 auto;
     font-family: Helvetica;
   }
