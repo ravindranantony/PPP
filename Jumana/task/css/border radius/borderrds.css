@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(209, 196, 196);
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+    margin: 40px;
+}
+
+.container {
+    width: 400px;
+    height: 200px;
+    margin-left: 35%;
+    margin-top: 50px;
+    border-radius: 30px;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
