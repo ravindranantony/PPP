@@ -7,6 +7,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+59,000000+59,000000+82&0.65+60,0+81 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 59%,rgba(0,0,0,0.65) 60%,rgba(0,0,0,0) 81%,rgba(0,0,0,0) 82%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
 h1 {
@@ -35,6 +38,9 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s, border 0.3s;
     border: 2px solid transparent;  /* Default transparent border to prevent shifting */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efc5ca+0,d24b5a+50,ba2737+51,f18e99+100;Red+Gloss+%233 */
+background: linear-gradient(to bottom,  rgba(239,197,202,1) 0%,rgba(210,75,90,1) 50%,rgba(186,39,55,1) 51%,rgba(241,142,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
 .tile {
@@ -48,6 +54,9 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s, border 0.3s;
     border: 2px solid transparent;  /* Default transparent border to prevent shifting */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efc5ca+0,d24b5a+50,ba2737+51,f18e99+100;Red+Gloss+%233 */
+background: linear-gradient(to bottom,  rgba(239,197,202,1) 0%,rgba(210,75,90,1) 50%,rgba(186,39,55,1) 51%,rgba(241,142,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
 }
 
 .tile:hover {

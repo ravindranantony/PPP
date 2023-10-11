@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; /* Added to stack elements vertically */
+        }
+
+        h1 {
+            font-size: 24px; /* Adjust the font size as needed */
+        }
+
+        .table-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+            border: 1px solid #000;
+        }
+
+        .table-header {
+            background-color: #d4137d;
+            color: #e7d8d8;
+            text-align: center;
+            padding: 17px;
+        }
+
+        .table-cell {
+            border: 5px solid rgb(3, 245, 35);
+            padding: 40px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+        /* Style for alternating rows */
+        .table-row:nth-child(even) {
+            background-color: #e0d2d2;
+        }
+
+        /* Add custom classes for coloring specific cells */
+        .leeman-column {
+            background-color: white;
+        }
+
+        .hasir-column {
+            background-color: white;
+        }
+
+        .sindhu-cell {
+            background-color: white;
+        }
+
+        .indhira-cell {
+            background-color: white;
+        }
+
+        .indian-cell {
+            background-color: white;
+        }
+
+        .ppplus-cell {
+            background-color: white;
+            
+        }
+
+        .good-cell {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <div class="table-header">Name</div>
+        <div class="table-header">Region</div>
+        <div class="table-header">Course</div>
+        <div class="table-header">Performance</div>
+
+        <div class="table-cell leeman-column">Leeman</div>
+        <div class="table-cell indian-cell">Indian</div>
+        <div class="table-cell ppplus-cell">PP+</div>
+        <div class="table-cell good-cell">Good</div>
+
+        <div class="table-cell sindhu-cell">Sindhu</div>
+        <div class="table-cell indian-cell">Indian</div>
+        <div class="table-cell ppplus-cell">PP+</div>
+        <div class="table-cell good-cell">Good</div>
+
+        <div class="table-cell indhira-cell">Indhira</div>
+        <div class="table-cell indian-cell">Indian</div>
+        <div class="table-cell ppplus-cell">PP+</div>
+        <div class="table-cell good-cell">Good</div>
+
+        <div class="table-cell hasir-column">Hasir</div>
+        <div class="table-cell indian-cell">Indian</div>
+        <div class="table-cell ppplus-cell">PP+</div>
+        <div class="table-cell good-cell">Good</div>
+    </div>
+</body>
+</html>
