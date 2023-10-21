@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
@@ -8,10 +8,10 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #f3bfbf;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(236, 7, 7, 0.1);
     width: 80%;
     max-width: 500px;
     text-align: center;
@@ -28,7 +28,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #32f660;
 }
 
 #result {

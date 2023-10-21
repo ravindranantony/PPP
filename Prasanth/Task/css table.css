@@ -1,0 +1,125 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "nav footer footer";
+
+
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  
+  height: 100vh;
+  margin: 0;
+  
+  }
+
+header, footer, article, nav, div {
+  padding: 1.2em;
+  
+  color: aliceblue;
+
+  }
+#pageHeader {
+  grid-area: header;
+  background-image : url("BG1.jpg");
+  color: aliceblue;
+  box-shadow: 10px 10px rgb(13, 231, 6);
+  }
+#pageFooter {
+  grid-area: footer;
+  background-image : url("bg2.jpeg");
+  color: aliceblue;
+  align-items: center;
+  
+  }
+  {
+    background-color: #E7E9EB;
+  }
+ 
+  #mainArticle { 
+    grid-area: article;
+    font-size: large;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 50px 20px;
+    word-spacing: 2.5px;   
+    background-image : url("ff.jpg");  
+    color: rgb(33, 36, 34); 
+    font-family :serif
+  }
+  body {
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  } 
+  
+  input, textarea {
+    width: 100%;
+  }
+  #myDIV {
+    height:110px;
+    background-image : url("photo-1585314062604-1a357de8b000.jpg");  
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  #myDIV div {
+    width: 100px;
+    height: 80px; 
+    justify: center;
+    color: rgb(33, 36, 34); 
+  }
+  
+  .flex-container 
+  {
+    display: flex;
+    flex-direction: column;
+   
+    
+    background-color: rgb(238, 241, 243);
+    
+    color: rgb(176, 177, 170);
+  }
+  
+  .flex-container > div 
+  {
+    
+    background-color: rgb(0, 4, 8);
+    margin: 10px;
+    padding: 20px;
+    font-family : serif;
+    font-size:  20px;
+    align-items: center;
+    justify-content: center;
+  }
+#mainNav { 
+  grid-area: nav; 
+  background-image : url("bg3.jpg");   
+  color: aliceblue;
+  }
+#siteAds { 
+  grid-area: ads; 
+  border: 2px solid rgb(10, 235, 235);
+  padding: 10px;
+  border-radius: 25px;
+  color: aliceblue;
+  background-image : url("new1.jpg");   
+  } 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
