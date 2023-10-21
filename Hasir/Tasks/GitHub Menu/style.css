@@ -1,0 +1,281 @@
+
+
+:root {
+    --notification: #58A6FF;
+    --github-dark: #010409;
+    --github-dark-lighter: #0D1117;
+    --github-dark-border: #30363D;
+    --github-button-hover: #8B949E;
+    --background: #171B20;
+    --color: #828B94;
+    --github: #C9D1D9;
+    --navigation-hover: #292F36;
+    --navbar-height: 60px;
+}
+
+body {
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu__wrapper {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    z-index: 2;
+    gap: 24px; 
+    background-color: var(
+        --github-dark
+    );
+    height: var(--navbar-height);
+    padding: 0px 16px;
+    border-bottom: 1px solid var(--github-dark-border);
+    align-items: center;
+}
+
+.logo__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page__title {
+    color: var(--github);
+    padding: 8px 12px;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.page__title:hover {
+    background-color: var(--background);
+}
+
+.notification-mark {
+    width: 8px;
+    height: 8px;
+    top: -3px;
+    right: -3px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--notification);
+}
+
+@media (max-width: 400px) {
+    .page__title {
+        display: none;
+    }
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.logo svg {
+    fill: var(--github);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.action-button {
+    position: relative;
+    display: grid;
+    grid-auto-columns: max-content;
+    width: 32px;
+    height: 32px;
+    color: var(--github-dark-lighter);
+    background: transparent;
+    border: 1px solid var(--github-dark-border);
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background: var(--github-dark-lighter);
+    border: 1px solid var(--github);
+}
+
+.action-button svg {
+    fill: var(--github-button-hover);
+}
+
+.avatar-profile {
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    border: 1px solid var(--github-dark-border);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.navigation__menu {
+    background-color: var(
+        --background
+    );
+    z-index: 3;
+    border-left: 1px solid var(--github-dark-border);
+    height: 100vh;
+    opacity: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 12px;
+    right: 0;
+    position: fixed;
+    box-shadow: 
+    rgba(100, 100, 111, 0.2)
+    0px 7px 29px 0px;
+    animation: fadeInAnimation 
+    ease-in-out 0.5s forwards;
+}
+
+.navigation__menu__items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-type: none;
+    margin: 0px;
+    margin-top: 16px;
+    padding: 0px;
+    color: var(--github-button-hover);
+}
+
+.navigation__menu__items > li {
+    display: flex;
+    gap: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 36px;
+    border-radius: 6px;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color);
+    padding: 0px 8px;
+}
+
+.navigation__menu__items > li:hover {
+    background-color: var(--navigation-hover);
+    color: var(--github);
+}
+
+.navigation__menu__items > li > svg {
+    fill: var(--github);
+}
+
+.navigation__menu__items > .separator {
+    display: flex;
+    align-items: center;
+    height: 6px;
+    padding: 0px;
+}
+
+.navigation__menu__items > .separator:hover  {
+    background-color: var(--background);
+}
+
+.navigation__menu__items > .separator > hr {
+    border: 1px solid var(--github-dark-border);
+    width: 100%;
+}
+
+.avatar-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.avatar-wrapper .avatar-profile {
+    width: 42px;
+    height: 42px;
+}
+
+.avatar-name-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-name-alias {
+    color: var(--github);
+    font-weight: 600;
+}
+
+.avatar-name {
+    color: var(--color);
+    font-size: 12px;
+}
+
+.close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    margin-left: auto;
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+}
+
+.close-button:hover {
+    background-color: var(--navigation-hover);
+}
+
+.close-button svg {
+    height: 16px;
+    width: 16px;
+    fill: var(--github);
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        max-width: 0px;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        max-width: 320px;
+    }
+}
+
+.none {
+    display: none;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeOutAnimation 
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+        max-width: 320px;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        max-width: 0px;
+        visibility: hidden;
+    }
+}
