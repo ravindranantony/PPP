@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+#header 
+{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+.container1 {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(9, 156, 88, 0.2);
+    overflow: hidden;
+    }
+
+.login-section {
+    flex: 5;
+    padding: 120px;
+    text-align: center;
+}
+.login-section h1 {
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+}
