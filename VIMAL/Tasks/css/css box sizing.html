@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Sizing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            margin: 5px;
+            border-radius: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .box-1 {
+            width: 120px;
+            height: 120px;
+            background-color: red;
+        }
+
+        .box-2 {
+            width: 160px;
+            height: 160px;
+            background-color:blue;
+        }
+
+        .box-3 {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        .box-4 {
+            width: 200px;
+            height: 240px;
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    <div class="box box-4"></div>
+</body>
+</html>
