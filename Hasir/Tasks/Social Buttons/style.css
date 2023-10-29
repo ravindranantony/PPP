@@ -1,0 +1,143 @@
+/* Default styles */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+:root {
+    --background: #060707;
+    --active: #00C896;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-wrapper {
+    position: relative;
+}
+
+.socials-menu {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active > .socials-menu {
+    opacity: 1;
+}
+
+.share-button {
+    position: absolute;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--background);
+    border-radius: 50%;
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+.share-button img {
+    height: 32px;
+    width: 32px;
+}
+
+.active .share-button, .share-button:hover {
+    background-color: var(--active);
+    transform: scale(1.03);
+}
+
+.social {
+    position: absolute;
+    list-style: none;
+    transition: all 0.5s ease-in-out;
+    display: grid;
+    cursor: pointer;
+    place-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+.social img {
+    height: 32px;
+    width: 32px;
+    transition: all 0.3s;
+}
+
+.social a {
+    display: grid;
+    cursor: pointer;
+    place-items: center;
+}
+
+.social:hover img {
+    transform: scale(1.10);
+}
+
+.active .social:nth-child(1) {
+    transform: translateX(-82px);
+}
+
+.active .social:nth-child(1):hover {
+    background: radial-gradient(
+        circle at 30% 107%, #fdf497 0%, 
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 60%,#285AEB 90%
+    );
+}
+
+.active .social:nth-child(2) {
+    transform: translateY(-82px);
+}
+
+.active .social:nth-child(2):hover {
+    background-color: #1D9BF0;
+}
+
+.active .social:nth-child(3) {
+    transform: translateX(82px);
+}
+
+.active .social:nth-child(3):hover {
+    background: radial-gradient(
+        circle at 30% 107%, #fdf497 0%, 
+        #fdf497 5%, #fd5949 45%,
+        #d6249f 60%,#285AEB 90%
+    );
+}
+
+.active .social:nth-child(4) {
+    transform: translateY(82px);
+}
+
+.active .social:nth-child(4):hover {
+    background-color: #e52d27;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}

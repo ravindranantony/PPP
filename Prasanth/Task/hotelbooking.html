@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fully Booked</title>
+    <link rel="stylesheet" href="hotelbooking.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Welcome to Fully Booked</h1>
+            <div id="login-container">
+                <h2>User Login</h2>
+                <input type="text" id="username" placeholder="Username" required><br>
+                <input type="password" id="password" placeholder="Password" required><br>
+                <button class="login-button" onclick="login()">Login</button>
+                <div class="social-login">
+                    <button onclick="loginWithGoogle()">Login with Google</button>
+                    <button onclick="loginWithFacebook()">Login with Facebook</button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <img src="WhatsApp Image 2023-09-28 at 18.13.24.jpg" alt="Fully Booked Image">
+        </div>
+    </div>
+
+    <script src="hotelbooking.js"></script>
+</body>
+</html>
