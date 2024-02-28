@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 100px;
+        height: 100px;
+        font-size: 4em;
+    }
+}
+
+#box1{
+    background-color: hsl(0, 100%, 70%);
+}
+#box2{
+    background-color: hsl(52, 100%, 70%);
+}
+#box3{
+    background-color: hsl(111, 100%, 70%);
+}
+#box4{
+    background-color: hsl(201, 100%, 70%);
+}
+#box5{
+    background-color: hsl(53, 69%, 14%);
+}
+#box6{
+    background-color: hsl(111, 31%, 35%);
+}
+#box7{
+    background-color: hsl(201, 42%, 41%);
+}
