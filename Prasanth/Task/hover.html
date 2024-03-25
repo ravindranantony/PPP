@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hover Over Text Example</title>
+    <style>
+        .hover-element {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        .hover-text {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .hover-element:hover .hover-text {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="hover-element">
+        Hover Over Me
+        <div class="hover-text">This is the hover-over text</div>
+    </div>
+
+    <div class="hover-element">
+        Another One
+        <div class="hover-text">More hover-over text</div>
+    </div>
+
+    <script>
+        // You can add JavaScript code here if needed
+    </script>
+</body>
+</html>

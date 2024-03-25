@@ -1,22 +1,35 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    background-image: url('/SindhuLaheri/Images/ttt.jpeg');
-    background-size: cover;
+    text-align: center;
     padding-left: 100px;
     padding-right: 100px;
-     
-  }
-  p{
-    color: white;
-    text-align: center;
-  }
+    font-size: 5mm;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/SindhuLaheri/Images/_8e7be3bb-6f06-47a2-8ab4-4d20acacfcb5.jpeg');
+    background-size: cover;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    }
 .board {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    gap: 4px;
-    padding-left: 40%;
-    
+    grid-template-columns: repeat(3, 110px);
+    grid-gap: 1px;
+    align-items: center;
+justify-content: center;
+display: flexbox;
+
+}
+p
+{
+color: black;
+text-align: center;
+align-items: center;
+justify-content: center;
+padding-left: 100px;
+    padding-right: 100px;
+
 }
 .cell {
     width: 100px;
@@ -24,26 +37,52 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    color: white;
-    border: 5px solid greenyellow;
+    font-size: 36px;
+    text-align: center;
+    border: 5px solid black;
     cursor: pointer;
-    
+    background-color: ;
+      }
+.cell:hover {
+    background-color: green;
 }
-#restart-button {
-    background-color: #333;
-    color: white;
+
+
+#message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
     align-items: center;
-    border-color: aqua;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 50px;
-    margin-left: 40%;
-    margin-bottom: 0%;
-    
+    justify-content: center;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#restart-button {
+background-color: green;
+color: black;
+align-items: center;
+border-color: black;
+border-radius: 10x;
+cursor: pointer;
+font-size: 10mm;
+justify-content: center;
+text-align: center;
+padding-left: 100px;
+    padding-right: 100px;
 }
 
 #status {
-    font-size: 1.2em;
-    color: #333;
+font-size: 20px;
+color: red;
+align-items: center;
+text-align: center;
+justify-content: center;
+margin-top: 50px;
+margin-left: 40%;
+margin-bottom: 0%;
+padding-left: 100px;
+padding-right: 100px;
+
 }
